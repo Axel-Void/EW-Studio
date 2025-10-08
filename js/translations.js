@@ -7,7 +7,7 @@ export const translations = {
         hero_description: "Инди-разработчик, осваивающий Godot 4 для создания увлекательных 2D-игр, а также изучающий веб-разработку (React/Three.js) для портфолио.",
         hero_button: "Смотреть проекты",
         about_title: "О студии EW Studio", about_subtitle: "Кто я и что создаю?",
-        about_p1: "EW Studio (Eclipse Work Studio) — мой личный проект. Я являюсь единственным разработчиком и сосредоточен на освоении Godot 4 для создания 2D-игр. На данный момент 3D-разработка пока не поддалась, поэтому я сфокусирован на создании глубоких и увлекательных миров в двух измерениях.",
+        about_p1: "EW Studio (Eclipse Work Studio) — мой личный проект. Я являюсь единственным разработчиком и сосредоточен на освоении Godot 4 для создания 2D-игр. На данный момент 3D-разработка пока не интересует, поэтому я сфокусирован на создании глубоких и увлекательных миров в двух измерениях.",
         about_p2: "Параллельно я изучаю веб-разработку (JavaScript, React), чтобы иметь возможность представить свои работы в лучшем виде. Этот сайт — часть моего учебного пути в вебе.",
         projects_title: "Мои Проекты",
         project_atlas_title: "Project Atlas: Destination", project_atlas_subtitle: "Пиксельная 2D-игра на Godot в стадии пре-альфа",
@@ -47,7 +47,7 @@ export const translations = {
         hero_description: "An indie developer mastering Godot 4 to create engaging 2D games, while also learning web development (React/Three.js) for my portfolio.",
         hero_button: "View Projects",
         about_title: "About EW Studio", about_subtitle: "Who I am and what I create?",
-        about_p1: "EW Studio (Eclipse Work Studio) is my personal project. I am the **sole developer** focused on mastering **Godot 4** to create **2D games**. For now, 3D development has proven challenging, so I'm focused on creating deep and engaging worlds in two dimensions.",
+        about_p1: "EW Studio (Eclipse Work Studio) is my personal project. I am the **sole developer** focused on mastering **Godot 4** to create **2D games**. For now, 3D development has not intersting, so I'm focused on creating deep and engaging worlds in two dimensions.",
         about_p2: "In parallel, I'm learning **web development (JavaScript, React)** to showcase my work in the best possible way. This site is part of my web learning journey.",
         projects_title: "Our Projects",
         project_atlas_title: "Project Atlas: Destination", project_atlas_subtitle: "A 2D Pixel Art Godot game in pre-alpha stage",
@@ -121,4 +121,5 @@ export const translations = {
         footer_text: `&copy; ${new Date().getFullYear()} EW Studio. Axel Voidが<span class="text-red-500">♥</span>を込めて開発しました`,
     },
 };
+
 
