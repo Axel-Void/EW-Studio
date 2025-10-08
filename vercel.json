@@ -1,0 +1,19 @@
+{
+  "headers": [
+    {
+      "source": "/js/(.*\\.js)",
+      "headers": [
+        {
+          "key": "Content-Type",
+          "value": "application/javascript"
+        }
+      ]
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/((?!js|css|images|style\\.css).*\\w+)/?",
+      "destination": "/index.html"
+    }
+  ]
+}
