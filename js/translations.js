@@ -14,8 +14,8 @@ export const translations = {
         project_atlas_desc: "Игра в жанре Reverse Bullet Hell / Action Survival с атмосферой Cosmic Techno-Horror. Проект находится в активной разработке.",
         project_atlas_tags: ['Godot 4', '2D', 'Pixel Art', 'Пре-альфа', 'В разработке'],
         project_atlas_lore_title: "Описание (Лор)",
-        project_atlas_lore: `Ты когда-нибудь задумывался: где кончается игра, и начинается судьба? Project Atlas не выбирает лучших. Он выбирает тех, чей Навык должен быть извлечен. Тебя поместили в Пространство Код Зиро — нейтральную, бездушную симуляцию. Твой наставник, Терминал, требует одного: продержаться 120 минут.`,
-        project_atlas_challenges_title: "Сложности и Решения", // <-- КОММА ДОБАВЛЕНА
+        project_atlas_lore: `Ты когда-нибудь задумывался: где кончается игра, и начинается судьба? Project Atlas не выбирает лучших. Он выбирает тех, чей Навык должен быть извлечен. Тебя поместили в Пространство Код Зиро — нейтральную, бездушную симуляцию. Твой наставник, Терминал, требует одного: продержаться 120 минут.`, // <-- ДОБАВЛЕНА ЗАПЯТАЯ
+        project_atlas_challenges_title: "Сложности и Решения",
         project_atlas_challenges: [
             'Стиль: Реализация мрачного, высококонтрастного визуала в Godot 4.',
             'Оптимизация: Обработка сотен врагов на экране в 2D без просадки FPS.',
@@ -54,8 +54,8 @@ export const translations = {
         project_atlas_desc: "A Reverse Bullet Hell / Action Survival game with a Cosmic Techno-Horror atmosphere. The project is under active development.",
         project_atlas_tags: ['Godot 4', '2D', 'Pixel Art', 'Pre-Alpha', 'In Development'],
         project_atlas_lore_title: "Description (Lore)",
-        project_atlas_lore: `Have you ever wondered: where does the game end and destiny begin? Project Atlas doesn't choose the best. It chooses those whose Skill must be extracted. You've been placed in Code Zero Space—a neutral, soulless simulation. Your mentor, Terminal, demands one thing: to survive for 120 minutes.`,
-        project_atlas_challenges_title: "Challenges & Solutions", // <-- КОММА ДОБАВЛЕНА
+        project_atlas_lore: `Have you ever wondered: where does the game end and destiny begin? Project Atlas doesn't choose the best. It chooses those whose Skill must be extracted. You've been placed in Code Zero Space—a neutral, soulless simulation. Your mentor, Terminal, demands one thing: to survive for 120 minutes.`, // <-- ДОБАВЛЕНА ЗАПЯТАЯ
+        project_atlas_challenges_title: "Challenges & Solutions",
         project_atlas_challenges: [
             '**Style:** Implementing a dark, high-contrast visual style in Godot 4.',
             '**Optimization:** Handling hundreds of enemies on-screen in 2D without FPS drops.',
@@ -94,8 +94,8 @@ export const translations = {
         project_atlas_desc: "コズミック・テクノホラーの雰囲気を持つ「リバース・ブレットヘル / アクション・サバイバル」ゲーム。現在、活発に開発中です。",
         project_atlas_tags: ['Godot 4', '2D', 'ピクセルアート', 'プレアルファ', '開発中'],
         project_atlas_lore_title: "説明（世界観）",
-        project_atlas_lore: `考えたことはあるか？ゲームはどこで終わり、運命はどこで始まるのか？「プロジェクト・アトラス」は最高の者を選ばない。そのスキルを抽出されるべき者を選ぶ。君はコード・ゼロ・スペースという、中立で魂のないシミュレーションに配置された。指導者であるターミナルが要求するのは一つ、120分間生き残ることだ。`,
-        project_atlas_challenges_title: "課題と解決策", // <-- КОММА ДОБАВЛЕНА
+        project_atlas_lore: `考えたことはあるか？ゲームはどこで終わり、運命はどこで始まるのか？「プロジェクト・アトラス」は最高の者を選ばない。そのスキルを抽出されるべき者を選ぶ。君はコード・ゼロ・スペースという、中立で魂のないシミュレーションに配置された。指導者であるターミナルが要求するのは一つ、120分間生き残ることだ。`, // <-- ДОБАВЛЕНА ЗАПЯТАЯ
+        project_atlas_challenges_title: "課題と解決策",
         project_atlas_challenges: [
             '**スタイル：** Godot 4でダークでハイコントラストなビジュアルを実現する。',
             '**最適化：** FPSを低下させずに2Dで画面上の数百の敵を処理する。',
@@ -121,7 +121,3 @@ export const translations = {
         footer_text: `&copy; ${new Date().getFullYear()} EW Studio. ヴァッシュ・ニックが<span class="text-red-500">♥</span>を込めて開発しました`,
     },
 };
-
-
-
-
