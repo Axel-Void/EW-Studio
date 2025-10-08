@@ -19,7 +19,7 @@ export const translations = {
         project_atlas_challenges: [
             'Стиль: Реализация мрачного, высококонтрастного визуала в Godot 4.',
             'Оптимизация: Обработка сотен врагов на экране в 2D без просадки FPS.',
-            'Разработка ЛОРа: Интеграция глубокого ЛОРа через внутриигровые тексты.'
+            'Разработка ЛОРа: Интеграция глубокого ЛОРа через внутриигровые тексты.',
             'Текстуры: К сожалению я пока не приуспел в пиксель арте'
         ],
         project_wip_title: "Проект в разработке...", project_wip_subtitle: "Скоро здесь будет что-то интересное.",
@@ -59,7 +59,8 @@ export const translations = {
         project_atlas_challenges: [
             '**Style:** Implementing a dark, high-contrast visual style in Godot 4.',
             '**Optimization:** Handling hundreds of enemies on-screen in 2D without FPS drops.',
-            '**Lore Development:** Integrating deep lore through in-game texts.'
+            '**Lore Development:** Integrating deep lore through in-game texts.',
+            'Textures: Unfortunately, I havent gotten around to pixel art yet.'
         ],
         project_wip_title: "Project in Progress...", project_wip_subtitle: "Something interesting is coming soon.",
         project_wip_desc: "This project is in the early stages. More details will be available later.",
@@ -98,7 +99,8 @@ export const translations = {
         project_atlas_challenges: [
             '**スタイル：** Godot 4でダークでハイコントラストなビジュアルを実現する。',
             '**最適化：** FPSを低下させずに2Dで画面上の数百の敵を処理する。',
-            '**世界観の構築：** ゲーム内のテキストを通じて深い世界観を統合する。'
+            '**世界観の構築：** ゲーム内のテキストを通じて深い世界観を統合する。',
+            'テクスチャ: 残念ながら、まだピクセル アートに取り組んでいません。'
         ],
         project_wip_title: "開発中のプロジェクト...", project_wip_subtitle: "もうすぐ面白いものが登場します。",
         project_wip_desc: "このプロジェクトは初期段階です。詳細は後日公開します。",
@@ -119,4 +121,5 @@ export const translations = {
         footer_text: `&copy; ${new Date().getFullYear()} EW Studio. ヴァッシュ・ニックが<span class="text-red-500">♥</span>を込めて開発しました`,
     },
 };
+
 
