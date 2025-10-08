@@ -7,9 +7,9 @@ export const translations = {
         hero_description: "Инди-разработчик, осваивающий Godot 4 для создания увлекательных 2D-игр, а также изучающий веб-разработку (React/Three.js) для портфолио.",
         hero_button: "Смотреть проекты",
         about_title: "О студии EW Studio", about_subtitle: "Кто я и что создаю?",
-        about_p1: "**EW Studio (Eclipse Work Studio)** — мой личный проект. Я являюсь единственным разработчиком и сосредоточен на освоении Godot 4 для создания 2D-игр. На данный момент 3D-разработка пока не поддалась, поэтому я сфокусирован на создании глубоких и увлекательных миров в двух измерениях.",
+        about_p1: "EW Studio (Eclipse Work Studio) — мой личный проект. Я являюсь единственным разработчиком и сосредоточен на освоении Godot 4 для создания 2D-игр. На данный момент 3D-разработка пока не поддалась, поэтому я сфокусирован на создании глубоких и увлекательных миров в двух измерениях.",
         about_p2: "Параллельно я изучаю веб-разработку (JavaScript, React), чтобы иметь возможность представить свои работы в лучшем виде. Этот сайт — часть моего учебного пути в вебе.",
-        projects_title: "Наши Проекты",
+        projects_title: "Мои Проекты",
         project_atlas_title: "Project Atlas: Destination", project_atlas_subtitle: "Пиксельная 2D-игра на Godot в стадии пре-альфа",
         project_atlas_desc: "Игра в жанре Reverse Bullet Hell / Action Survival с атмосферой Cosmic Techno-Horror. Проект находится в активной разработке.",
         project_atlas_tags: ['Godot 4', '2D', 'Pixel Art', 'Пре-альфа', 'В разработке'],
@@ -17,9 +17,10 @@ export const translations = {
         project_atlas_lore: `Ты когда-нибудь задумывался: где кончается игра, и начинается судьба? Project Atlas не выбирает лучших. Он выбирает тех, чей Навык должен быть извлечен. Тебя поместили в Пространство Код Зиро — нейтральную, бездушную симуляцию. Твой наставник, Терминал, требует одного: продержаться 120 минут.`,
         project_atlas_challenges_title: "Сложности и Решения",
         project_atlas_challenges: [
-            '**Стиль:** Реализация мрачного, высококонтрастного визуала в Godot 4.',
-            '**Оптимизация:** Обработка сотен врагов на экране в 2D без просадки FPS.',
-            '**Разработка ЛОРа:** Интеграция глубокого ЛОРа через внутриигровые тексты.'
+            'Стиль: Реализация мрачного, высококонтрастного визуала в Godot 4.',
+            'Оптимизация: Обработка сотен врагов на экране в 2D без просадки FPS.',
+            'Разработка ЛОРа: Интеграция глубокого ЛОРа через внутриигровые тексты.'
+            'Текстуры: К сожалению я пока не приуспел в пиксель арте'
         ],
         project_wip_title: "Проект в разработке...", project_wip_subtitle: "Скоро здесь будет что-то интересное.",
         project_wip_desc: "Этот проект находится на ранней стадии. Подробности появятся позже.",
@@ -28,7 +29,7 @@ export const translations = {
         blog_title: "Блог о Разработке", btn_read_more: "Читать далее →", btn_back_to_blog: "Назад к блогу",
         post1_title: "Почему я перешел от JS к Godot 4", post1_date: "06 октября 2025",
         post1_summary: "Сравнение разработки 2D-игр на чистом Canvas/JS и на движке Godot. Как Godot упростил мой путь в геймдеве.",
-        post1_content: `<p>Создание первой игры — это всегда смесь эйфории и отчаяния. Мой первый проект был на чистом JavaScript. Я столкнулся с тем, что управление игровым циклом и обработка столкновений требовали огромного внимания.</p><h3>Ошибки, на которых я учился в JS:</h3><ul><li>**"Божественный объект":** Попытка запихнуть всю логику в один файл.</li><li>**Проблема с FPS:** Использование <strong>setInterval</strong> вместо <strong>requestAnimationFrame</strong>.</li></ul><p>Теперь в <strong>Godot 4</strong> многие эти проблемы решены движком, что позволяет сосредоточиться на геймдизайне.</p>`,
+        post1_content: `<p>Создание первой игры — это всегда смесь эйфории и отчаяния. Мой первый проект был на чистом JavaScript. Я столкнулся с тем, что управление игровым циклом и обработка столкновений требовали огромного внимания.</p><h3>Ошибки, на которых я учился в JS:</h3><ul><li>**""Мусорный Проект:** Попытка запихнуть всю логику в один файл.</li><li>**Проблема с FPS:** Использование <strong>setInterval</strong> вместо <strong>requestAnimationFrame</strong>.</li></ul><p>Теперь в <strong>Godot 4</strong> многие эти проблемы решены движком, что позволяет сосредоточиться на геймдизайне.</p>`,
         post2_title: "5 библиотек для веб-анимаций", post2_date: "28 сентября 2025",
         post2_summary: "Обзор инструментов, которые помогают мне оживить мое веб-портфолио, от легких CSS-решений до мощных JS-фреймворков.",
         post2_content: `<p>Анимация — это душа современного веба. Вот пять инструментов, которые я осваиваю:</p><ol><li><strong>Tailwind CSS Transitions:</strong> Идеально для быстрых UI-анимаций.</li><li><strong>GSAP (GreenSock):</strong> Профессиональный стандарт для сложных анимаций.</li><li><strong>Lottie:</strong> Для импорта анимаций из After Effects.</li><li><strong>Three.js:</strong> Если нужна 3D-анимация.</li><li><strong>Framer Motion (для React):</strong> Простой способ добавления переходов в React-приложениях.</li></ol>`,
@@ -42,11 +43,11 @@ export const translations = {
     en: {
         page_title: "Developer Portfolio: EW Studio",
         nav_about: "About", nav_projects: "Projects", nav_blog: "Blog", nav_contact: "Contact",
-        hero_subtitle: "Indie 2D Game Development & Web Practice", hero_title: "Hi, I'm Vash Nick",
+        hero_subtitle: "Indie 2D Game Development & Web Practice", hero_title: "Hi, I'm Axel Void",
         hero_description: "An indie developer mastering Godot 4 to create engaging 2D games, while also learning web development (React/Three.js) for my portfolio.",
         hero_button: "View Projects",
         about_title: "About EW Studio", about_subtitle: "Who I am and what I create?",
-        about_p1: "**EW Studio (Eclipse Work Studio)** is my personal project. I, Vash Nick, am the **sole developer** focused on mastering **Godot 4** to create **2D games**. For now, 3D development has proven challenging, so I'm focused on creating deep and engaging worlds in two dimensions.",
+        about_p1: "EW Studio (Eclipse Work Studio) is my personal project. I am the **sole developer** focused on mastering **Godot 4** to create **2D games**. For now, 3D development has proven challenging, so I'm focused on creating deep and engaging worlds in two dimensions.",
         about_p2: "In parallel, I'm learning **web development (JavaScript, React)** to showcase my work in the best possible way. This site is part of my web learning journey.",
         projects_title: "Our Projects",
         project_atlas_title: "Project Atlas: Destination", project_atlas_subtitle: "A 2D Pixel Art Godot game in pre-alpha stage",
@@ -81,11 +82,11 @@ export const translations = {
     jp: {
         page_title: "開発者ポートフォリオ: EW Studio",
         nav_about: "スタジオについて", nav_projects: "プロジェクト", nav_blog: "ブログ", nav_contact: "連絡先",
-        hero_subtitle: "インディー2Dゲーム開発とウェブ制作", hero_title: "こんにちは、ヴァッシュ・ニックです",
+        hero_subtitle: "インディー2Dゲーム開発とウェブ制作", hero_title: "こんにちは、Axel Voidです",
         hero_description: "魅力的な2Dゲームを制作するためにGodot 4を習得中のインディー開発者です。ポートフォリオのためにウェブ開発（React/Three.js）も学んでいます。",
         hero_button: "プロジェクトを見る",
         about_title: "EW Studioについて", about_subtitle: "自己紹介と制作物",
-        about_p1: "**EW Studio (Eclipse Work Studio)** は私の個人プロジェクトです。私、ヴァッシュ・ニックが**唯一の開発者**として、**Godot 4**を使った**2Dゲーム**制作に集中しています。現時点では3D開発は難しいため、2次元で深く魅力的な世界を創造することに焦点を当てています。",
+        about_p1: "EW Studio (Eclipse Work Studio) は私の個人プロジェクトです。私が**唯一の開発者**として、**Godot 4**を使った**2Dゲーム**制作に集中しています。現時点では3D開発は難しいため、2次元で深く魅力的な世界を創造することに焦点を当てています。",
         about_p2: "並行して、自分の作品を最良の形で見せるために**ウェブ開発（JavaScript、React）**を学んでいます。このサイトは私のウェブ学習の旅の一部です。",
         projects_title: "私たちのプロジェクト",
         project_atlas_title: "プロジェクト・アトラス：デスティネーション", project_atlas_subtitle: "Godot製2Dピクセルアートゲーム（プレアルファ段階）",
@@ -118,3 +119,4 @@ export const translations = {
         footer_text: `&copy; ${new Date().getFullYear()} EW Studio. ヴァッシュ・ニックが<span class="text-red-500">♥</span>を込めて開発しました`,
     },
 };
+
