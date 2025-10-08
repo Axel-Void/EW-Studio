@@ -3,7 +3,7 @@ export const translations = {
     ru: {
         page_title: "Портфолио Разработчика: EW Studio",
         nav_about: "О студии", nav_projects: "Проекты", nav_blog: "Блог", nav_contact: "Связаться",
-        hero_subtitle: "Инди-разработка 2D-игр и веб-практика", hero_title: "Привет, я Axel Void Или просто Салих",
+        hero_subtitle: "Инди-разработка 2D-игр и веб-практика", hero_title: "Привет, я Axel Void",
         hero_description: "Инди-разработчик, осваивающий Godot 4 для создания увлекательных 2D-игр, а также изучающий веб-разработку (React/Three.js) для портфолио.",
         hero_button: "Смотреть проекты",
         about_title: "О студии EW Studio", about_subtitle: "Кто я и что создаю?",
@@ -14,7 +14,7 @@ export const translations = {
         project_atlas_desc: "Игра в жанре Reverse Bullet Hell / Action Survival с атмосферой Cosmic Techno-Horror. Проект находится в активной разработке.",
         project_atlas_tags: ['Godot 4', '2D', 'Pixel Art', 'Пре-альфа', 'В разработке'],
         project_atlas_lore_title: "Описание (Лор)",
-        project_atlas_lore: `Ты когда-нибудь задумывался: где кончается игра, и начинается судьба? Project Atlas не выбирает лучших. Он выбирает тех, чей Навык должен быть извлечен. Тебя поместили в Пространство Код Зиро — нейтральную, бездушную симуляцию. Твой наставник, Терминал, требует одного: продержаться 120 минут.`, // <-- ДОБАВЛЕНА ЗАПЯТАЯ
+        project_atlas_lore: `Project Atlas не выбирает лучших. Он выбирает тех, чей Навык должен быть извлечен. Тебя поместили в Пространство Код Зиро — нейтральную, бездушную симуляцию. Твой наставник, Терминал, требует одного: продержаться 120 минут.`, // <-- ДОБАВЛЕНА ЗАПЯТАЯ
         project_atlas_challenges_title: "Сложности и Решения",
         project_atlas_challenges: [
             'Стиль: Реализация мрачного, высококонтрастного визуала в Godot 4.',
@@ -121,5 +121,6 @@ export const translations = {
         footer_text: `&copy; ${new Date().getFullYear()} EW Studio. Axel Voidが<span class="text-red-500">♥</span>を込めて開発しました`,
     },
 };
+
 
 
