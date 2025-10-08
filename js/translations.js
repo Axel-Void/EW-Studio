@@ -38,7 +38,7 @@ export const translations = {
         post3_content: `<p>В мире инди-геймдева часто приходится выбирать. Всегда ли графика имеет решающее значение?</p><h3>Геймплей - король</h3><p>Мой опыт показывает, что игроки простят простую графику, если механика глубока и увлекательна. Это особенно критично, когда вы один и сосредоточены на <strong>2D-разработке</strong>.</p><p>Я всегда придерживаюсь принципа: <strong>"Сначала геймплей, потом полировка"</strong>. Это позволяет быстро тестировать идеи и отсеивать неудачные.</p>`,
         contact_title: "Свяжитесь с EW Studio", contact_subtitle: "Мы всегда открыты для новых проектов и общения. Отправьте нам сообщение!",
         form_name: "Ваше имя", form_email: "Ваш Email", form_message: "Сообщение", form_submit: "Отправить сообщение",
-        footer_text: `&copy; ${new Date().getFullYear()} EW Studio. Разработано Вашим Ником с <span class="text-red-500">♥</span>`,
+        footer_text: `&copy; ${new Date().getFullYear()} EW Studio. Разработано ручками Axel Void с <span class="text-red-500">♥</span>`,
     },
     en: {
         page_title: "Developer Portfolio: EW Studio",
@@ -78,7 +78,7 @@ export const translations = {
         post3_content: `<p>In the world of indie gamedev, you often have to make choices. Are graphics always crucial?</p><h3>Gameplay is King</h3><p>My experience shows that players will forgive simple graphics if the mechanics are deep and engaging. This is especially critical when you're a solo developer focusing on <strong>2D development</strong>.</p><p>I always stick to the principle: <strong>"Gameplay first, polish later."</strong> This allows for rapid testing of ideas and discarding failed ones early.</p>`,
         contact_title: "Contact EW Studio", contact_subtitle: "We are always open to new projects and conversations. Send us a message!",
         form_name: "Your Name", form_email: "Your Email", form_message: "Message", form_submit: "Send Message",
-        footer_text: `&copy; ${new Date().getFullYear()} EW Studio. Developed by Vash Nick with <span class="text-red-500">♥</span>`,
+        footer_text: `&copy; ${new Date().getFullYear()} EW Studio. Developed by Axel Void with <span class="text-red-500">♥</span>`,
     },
     jp: {
         page_title: "開発者ポートフォリオ: EW Studio",
@@ -118,6 +118,7 @@ export const translations = {
         post3_content: `<p>インディーゲーム開発の世界では、しばしば選択を迫られます。グラフィックは常に重要なのでしょうか？</p><h3>ゲームプレイこそが王様</h3><p>私の経験では、メカニクスが深く魅力的であれば、プレイヤーはシンプルなグラフィックを許してくれます。これは、特に<strong>2D開発</strong>に集中しているソロ開発者にとって重要です。</p><p>私は常に<strong>「まずゲームプレイ、次に磨き上げ」</strong>という原則に従っています。これにより、アイデアを迅速にテストし、失敗したものを早期に排除できます。</p>`,
         contact_title: "EW Studioへのお問い合わせ", contact_subtitle: "新しいプロジェクトや会話をいつでも歓迎します。メッセージをお送りください！",
         form_name: "お名前", form_email: "メールアドレス", form_message: "メッセージ", form_submit: "メッセージを送信",
-        footer_text: `&copy; ${new Date().getFullYear()} EW Studio. ヴァッシュ・ニックが<span class="text-red-500">♥</span>を込めて開発しました`,
+        footer_text: `&copy; ${new Date().getFullYear()} EW Studio. Axel Voidが<span class="text-red-500">♥</span>を込めて開発しました`,
     },
 };
+
