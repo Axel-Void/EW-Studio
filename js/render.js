@@ -114,12 +114,6 @@ export function getPostData(lang, slug) {
     return posts[slug];
 }
 
-function getStaticPostImage(slug) {
-    if (slug === 'post-1') return 'https://placehold.co/600x300/334155/ffffff?text=Godot';
-    if (slug === 'post-2') return 'https://placehold.co/600x300/334155/ffffff?text=Animation';
-    return 'https://placehold.co/600x300/334155/ffffff?text=Gamedev';
-}
-
 export function renderBlogList() {
     const grid = document.getElementById('blog-grid');
     if (!grid) return;
