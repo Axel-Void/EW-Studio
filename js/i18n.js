@@ -50,8 +50,9 @@ export function initLanguageSwitcher() {
     }
 
     const savedLang = localStorage.getItem('userLanguage');
-    const browserLang = (navigator.language || 'ru').split('-')[0];
-    const init = savedLang || (translations[browserLang] ? browserLang : 'ru');
+    const browserLang = (navigator.language || 'en').split('-')[0];
+    const init = savedLang || (translations[browserLang] ? browserLang : 'en');
     setLanguage(init);
 }
+
 
