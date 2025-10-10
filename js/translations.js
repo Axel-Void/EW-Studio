@@ -1,332 +1,510 @@
 // js/translations.js
 export const translations = {
-    // -------------------------------------------------------------------------
-    // РУССКИЙ (RU) - ИСХОДНЫЙ ТЕКСТ, СОГЛАСОВАННЫЙ С ПОЛЬЗОВАТЕЛЕМ
-    // -------------------------------------------------------------------------
-    ru: {
-        page_title: "Портфолио Разработчика: EW Studio",
-        nav_about: "О студии", nav_projects: "Проекты", nav_blog: "Блог", nav_contact: "Связаться",
-        hero_subtitle: "Инди-разработка 2D-игр и веб-практика", hero_title: "Привет, я Axel Void",
-        hero_description: "Инди-разработчик, осваивающий **Godot 4** для создания увлекательных 2D-игр, а также изучающий веб-разработку (React/Three.js) для портфолио.",
-        hero_button: "Смотреть проекты",
-        about_title: "О студии EW Studio", about_subtitle: "Кто я и что создаю?",
-        about_p1: "EW Studio (Eclipse Work Studio) — мой личный проект. Я являюсь единственным разработчиком и сосредоточен на освоении **Godot 4** для создания 2D-игр. На данный момент 3D-разработка пока не интересует, поэтому я сфокусирован на создании глубоких и увлекательных миров в двух измерениях.",
-        about_p2: "Параллельно я изучаю веб-разработку (JavaScript, React), чтобы иметь возможность представить свои работы в лучшем виде. Этот сайт — часть моего учебного пути в вебе.",
-        projects_title: "Мои Проекты",
-        project_atlas_title: "Project Atlas: Destination", project_atlas_subtitle: "Пиксельная 2D-игра на Godot в стадии пре-альфа",
-        project_atlas_desc: "Игра в жанре **Reverse Bullet Hell** / **Action Survival** с атмосферой Cosmic Techno-Horror. Проект находится в активной разработке.",
-        project_atlas_tags: ['Godot 4', '2D', 'Pixel Art', 'Пре-альфа', 'В разработке'],
-        project_atlas_lore_title: "Описание (Лор)",
-        project_atlas_lore: `Project Atlas не выбирает лучших. Он выбирает тех, чей **Навык** должен быть извлечен. Тебя поместили в Пространство **Код Зиро** — нейтральную, бездушную симуляцию. Твой наставник, Терминал, требует одного: продержаться 120 минут.`,
-        project_atlas_challenges_title: "Сложности и Решения",
-        project_atlas_challenges: [
-            'Стиль: Реализация мрачного, высококонтрастного визуала в Godot 4.',
-            'Оптимизация: Обработка сотен врагов на экране в 2D без просадки FPS.',
-            'Разработка ЛОРа: Интеграция глубокого ЛОРа через внутриигровые тексты.',
-        ],
-        project_wip_title: "Проект в разработке...", project_wip_subtitle: "Скоро здесь будет что-то интересное.",
-        project_wip_desc: "Этот проект находится на ранней стадии. Подробности появятся позже.",
-        project_wip_tags: ['Скоро'],
-        btn_back_to_projects: "Назад к проектам", btn_view_details: "Смотреть детали", btn_steam_page: "Страница Steam", btn_playmarket_page: "Страница Play Market", status_soon: "Скоро",
-        blog_title: "Блог о Разработке", btn_read_more: "Читать далее →", btn_back_to_blog: "Назад к блогу",
-        post1_title: "Почему я перешел от JS к Godot 4", post1_date: "06 октября 2025",
-        post1_summary: "Сравнение разработки 2D-игр на чистом Canvas/JS и на движке Godot. Как Godot упростил мой путь в геймдеве.",
-        post1_content: `<p>Создание первой игры — это всегда смесь эйфории и отчаяния. Мой первый проект был на чистом JavaScript. Я столкнулся с тем, что управление игровым циклом и обработка столкновений требовали огромного внимания.</p><h3>Ошибки, на которых я учился в JS:</h3><ul><li>**Свалка логики**: Попытка запихнуть всю логику в один файл.</li><li>Проблема с FPS: Использование <strong>setInterval</strong> вместо <strong>requestAnimationFrame</strong>.</li></ul><p>Теперь в **Godot 4** многие эти проблемы решены движком, что позволяет сосредоточиться на геймдизайне.</p>`,
-        post2_title: "5 библиотек для веб-анимаций", post2_date: "28 сентября 2025",
-        post2_summary: "Обзор инструментов, которые помогают мне оживить мое веб-портфолио, от легких CSS-решений до мощных JS-фреймворков.",
-        post2_content: `<p>Анимация — это душа современного веба. Вот пять инструментов, которые я осваиваю:</p><ol><li>**Tailwind CSS Transitions:** Идеально для быстрых UI-анимаций.</li><li>**GSAP (GreenSock):** Профессиональный стандарт для сложных анимаций.</li><li>**Lottie:** Для импорта анимаций из After Effects.</li><li>**Three.js:** Если нужна 3D-анимация.</li><li>**Framer Motion (для React):** Простой способ добавления переходов в React-приложениях.</li></ol>`,
-        post3_title: "Мысли о геймдизайне: как выжить в 2D", post3_date: "15 сентября 2025",
-        post3_summary: "Графика или геймплей? Размышления о том, что делает игру по-настоящему великой и почему механика важнее визуала.",
-        post3_content: `<p>В мире инди-геймдева часто приходится выбирать. Всегда ли графика имеет решающее значение?</p><h3>Геймплей - король</h3><p>Мой опыт показывает, что игроки простят простую графику, если механика глубока и увлекательна. Это особенно критично, когда вы один и сосредоточены на **2D-разработке**.</p><p>Я всегда придерживаюсь принципа: **"Сначала геймплей, потом полировка"**. Это позволяет быстро тестировать идеи и отсеивать неудачные.</p>`,
-        contact_title: "Свяжитесь с EW Studio",
-        contact_subtitle: "Мы всегда открыты для новых проектов и общения. Отправьте нам сообщение!",
-        form_name: "Ваше имя", form_email: "Ваш Email", form_message: "Сообщение", form_submit: "Отправить сообщение",
-        footer_text: `&copy; ${new Date().getFullYear()} EW Studio. Разработано ручками Axel Void с <span class="text-red-500">♥</span>`,
-    },
+  // -------------------------------------------------------------------------
+  // РУССКИЙ (RU)
+  // -------------------------------------------------------------------------
+  ru: {
+    page_title: "Портфолио разработчика — EW Studio",
+    nav_about: "О студии", nav_projects: "Проекты", nav_blog: "Блог", nav_contact: "Контакты",
+    hero_subtitle: "Инди-разработка 2D-игр · веб-практика",
+    hero_title: "Привет — я Axel Void",
+    hero_description: "Я — инди-разработчик: осваиваю **Godot 4**, делаю захватывающие 2D-игры и параллельно прокачиваю веб-навыки (React / Three.js) для портфолио.",
+    hero_button: "Смотреть проекты",
 
-    // -------------------------------------------------------------------------
-    // ТАТАРСКИ (TT) — Яңа тел
-    // -------------------------------------------------------------------------
-    tt: {
-        page_title: "Эшләнмәче портфолиосы: EW Studio",
-        nav_about: "Студия турында", nav_projects: "Проектлар", nav_blog: "Блог", nav_contact: "Элемтә",
-        hero_subtitle: "Инди 2D-уеннар эшләү һәм веб-практика", hero_title: "Сәлам, мин Axel Void",
-        hero_description: "**Godot 4** уен двигательен өйрәнеп, мавыктыргыч 2D инди-уеннар эшләүче һәм портфолио өчен веб-эшләнмәләр (React / Three.js) өйрәнүче.",
-        hero_button: "Проектларны карау",
-  
-        about_title: "EW Studio турында", about_subtitle: "Мин кем һәм нәрсә булдырам?",
-        about_p1: "EW Studio (Eclipse Work Studio) — минем шәхси проект. Мин бердәнбер эшләнмәче һәм **Godot 4** аша 2D уеннар эшләүгә җанымны салганмын. Хәзерге вакытта 3D эшләнмә мине кызыксындырмый, шуңа күрә мин ике үлчәмдә тирән һәм мавыктыргыч дөньялар төзүгә юнәлеш алдым.",
-        about_p2: "Шул ук вакытта, үз эшләремне иң яхшы яклап күрсәтү өчен веб-эшләнмәләр (JavaScript, React) өйрәнәм. Бу сайт — минем веб-өйрәнү юлаулыгымның бер өлеше.",
-  
-        projects_title: "Минем проектлар",
-        project_atlas_title: "Project Atlas: Destination",
-        project_atlas_subtitle: "Pre-alpha стадиясендәге Godot’та пиксель 2D уен",
-        project_atlas_desc: "Cosmic Techno-Horror атмосферасы булган **Reverse Bullet Hell** / **Action Survival** жанрындагы уен. Проект актив эшләнү стадиясендә.",
-        project_atlas_tags: ['Godot 4', '2D', 'Пиксель Арт', 'Pre-alpha', 'Үсештә'],
-  
-        project_atlas_lore_title: "Тасвирлама (Лор)",
-        project_atlas_lore: `Project Atlas яхшыларны сайламый. Ул **Осталык (Навык)** алынырга тиеш булганнарны сайлый. Сине **Код Зиро киңлегенә** — нейтраль, җансыз симуляциягә урнаштырдылар. Синең остазың, Терминал, бер генә таләп куя: **120 минут исән кал**.`,
-  
-        project_atlas_challenges_title: "Кыенлыклар һәм чишелешләр",
-        project_atlas_challenges: [
-            'Стиль: Godot 4тә караңгы, югары контрастлы визуалны тормышка ашыру.',
-            'Оптимизация: 2Dда экранда йөзләгән дошманны эшкәртеп, FPS төшүеннән саклану.',
-            'Тасвирлама үсеше: Уен эчендәге текстлар аша тирән лорны интеграцияләү.',
-        ],
-  
-        project_wip_title: "Үсештәге проект...", project_wip_subtitle: "Биредә тиздән кызык биреме булачак.",
-        project_wip_desc: "Бу проект хәзерге вакытта башлангыч стадиядә. Тулырак мәгълүмат соңрак булачак.",
-        project_wip_tags: ['Тиздән'],
-  
-        btn_back_to_projects: "Проектларга кире кайту",
-        btn_view_details: "Детальләрне карау",
-        btn_steam_page: "Steam сәхифәсе",
-        btn_playmarket_page: "Play Market сәхифәсе",
-        status_soon: "Тиздән",
-  
-        blog_title: "Эшләнмә блогы",
-        btn_read_more: "Дәвам итеп уку →",
-        btn_back_to_blog: "Блогка кире кайту",
-  
-        post1_title: "Нигә мин JS’тан Godot 4’кә күчтем",
-        post1_date: "2025 елның 06 октябре",
-        post1_summary: "Чиста Canvas / JS’та 2D уеннар ясауны Godot’тагыга ничек чагыштырам. Godot минем геймдев юлымны ничек җиңеләйтте.",
-        post1_content: `<p>Беренче уенны ясау — һәрчак эйфория белән өметсезлек кушылган хис. Минем беренче проектыма чиста JavaScript’та керешелгән. Уен циклы белән идарә итү һәм бәрелешләрне эшкәртү зур игътибар сорый иде.</p><h3>JS’та өйрәнгән хаталарым:</h3><ul><li>**Логиканы җыю урыны**: бөтен логиканы бер файлга тырышып кертү.</li><li>FPS проблемасы: <strong>setInterval</strong> урынына <strong>requestAnimationFrame</strong> куллану.</li></ul><p>Хәзер **Godot 4**’тә күпчелек мәсъәләләр двигатель тарафыннан хәл ителә, миңа геймдизайnga күбрәк игътибар бирергә мөмкинлек тудыра.</p>`,
-  
-        post2_title: "Веб-анимацияләр өчен 5 китапханә",
-        post2_date: "2025 елның 28 сентябре",
-        post2_summary: "Минем веб-портфолиога җан өрергә ярдәм итүче кораллар турында күзәтү: җиңел CSS-чишелешләрдән алып көчле JS-фреймворкларга кадәр.",
-        post2_content: `<p>Анимация — хәзерге вебның җаны. Менә миңа ошаган биш корал:</p><ol><li>**Tailwind CSS Transitions:** UI анимацияләре өчен гади һәм эффектив.</li><li>**GSAP (GreenSock):** катлаулы анимацияләр өчен профессиональ корал.</li><li>**Lottie:** After Effects’тан анимацияләрне импортлау мөмкинлеге.</li><li>**Three.js:** 3D анимация кирәк булганда.</li><li>**Framer Motion (React өчен):** React кушымталарына көчле күчүләр өстәүнең җиңел ысулы.</li></ol>`,
-  
-        post3_title: "Геймдизайн турында уйлар: 2Dда ничек исән калырга",
-        post3_date: "2025 елның 15 сентябре",
-        post3_summary: "Графикамы яки геймплеймы? Уенны чыннан да бөек иткән нәрсә турында һәм ни өчен механика визуалдан да кыйммәтлерәк булуы турында уйланулар.",
-        post3_content: `<p>Инди-геймдев дөньясында еш кына сайларга туры килә: графика яки механика? Графика һәрвакыт хәлиткеч түгел.</p><h3>Геймплей — патша</h3><p>Минем тәҗрибәм күрсәтә: механика тирән булса, уенчылар гади графикны да кичерә. Бу — бердәнбер эшләнмәче булган очракта бигрәк тә мөһим.</p><p>Мин һәрвакыт **"Башта геймплей, соңыннан бизәү"** принцибына бәйләнәм. Бу идеяләрне тиз сынап, кирәкмәгәннәрне иртәрәк читкә кагарга мөмкинлек бирә.</p>`,
-  
-        contact_title: "EW Studio белән элемтәгә керү",
-        contact_subtitle: "Мин һәрвакыт яңа проектларга һәм аралашуга ачык. Хәбәр җибәр!",
-        form_name: "Исемең", form_email: "Email", form_message: "Хәбәр", form_submit: "Җибәрү",
-  
-        footer_text: `&copy; ${new Date().getFullYear()} EW Studio. Axel Void тарафыннан <span class="text-red-500">♥</span> белән эшләнде`,
-    },
+    about_title: "О EW Studio", about_subtitle: "Кто я и что создаю?",
+    about_p1: "EW Studio (Eclipse Work Studio) — это мой личный проект. Я работаю как соло-разработчик и сосредоточен на **Godot 4** — мне интересны глубокие, атмосферные миры в 2D. 3D-иногда красиво, но сейчас я выбираю фокус и плотный геймплей.",
+    about_p2: "Параллельно я изучаю веб-разработку (JavaScript, React), чтобы красиво представить игры в портфолио. Этот сайт — часть моего пути. (Да, я всё ещё люблю фиксить баги ночью — бесплатно.)",
 
-    // -------------------------------------------------------------------------
-    // АНГЛИЙСКИЙ (EN)
-    // -------------------------------------------------------------------------
-    en: {
-        page_title: "Developer Portfolio: EW Studio",
-        nav_about: "About", nav_projects: "Projects", nav_blog: "Blog", nav_contact: "Contact",
-        hero_subtitle: "Indie 2D Game Development & Web Practice", hero_title: "Hi, I'm Axel Void",
-        hero_description: "An indie developer mastering **Godot 4** to create engaging 2D games, while also learning web development (React/Three.js) for my portfolio.",
-        hero_button: "View Projects",
-        about_title: "About EW Studio", about_subtitle: "Who I am and what I create?",
-        about_p1: "EW Studio (Eclipse Work Studio) is my personal project. I am the sole developer focused on mastering **Godot 4** to create 2D games. For now, 3D development **doesn't interest me**, so I'm focused on creating deep and engaging worlds in two dimensions.",
-        about_p2: "In parallel, I'm learning web development (JavaScript, React) to showcase my work in the best possible way. This site is part of my web learning journey.",
-        projects_title: "Our Projects",
-        project_atlas_title: "Project Atlas: Destination", project_atlas_subtitle: "A 2D Pixel Art Godot game in pre-alpha stage",
-        project_atlas_desc: "A **Reverse Bullet Hell** / **Action Survival** game with a Cosmic Techno-Horror atmosphere. The project is under active development.",
-        project_atlas_tags: ['Godot 4', '2D', 'Pixel Art', 'Pre-Alpha', 'In Development'],
-        project_atlas_lore_title: "Description (Lore)",
-        project_atlas_lore: `Have you ever wondered: where does the game end and destiny begin? Project Atlas doesn't choose the best. It chooses those whose **Skill** must be extracted. You've been placed in **Code Zero Space**—a neutral, soulless simulation. Your mentor, Terminal, demands one thing: to survive for 120 minutes.`,
-        project_atlas_challenges_title: "Challenges & Solutions",
-        project_atlas_challenges: [
-            'Style: Implementing a dark, high-contrast visual style in Godot 4.',
-            'Optimization: Handling hundreds of enemies on-screen in 2D without FPS drops.',
-            'Lore Development: Integrating deep lore through in-game texts.',
-        ],
-        project_wip_title: "Project in Progress...", project_wip_subtitle: "Something interesting is coming soon.",
-        project_wip_desc: "This project is in the early stages. More details will be available later.",
-        project_wip_tags: ['Coming Soon'],
-        btn_back_to_projects: "Back to projects", btn_view_details: "View Details", btn_steam_page: "Steam Page", btn_playmarket_page: "Play Market Page", status_soon: "Coming Soon",
-        blog_title: "Development Blog", btn_read_more: "Read more →", btn_back_to_blog: "Back to blog",
-        post1_title: "Why I Switched from JS to Godot 4", post1_date: "October 06, 2025",
-        post1_summary: "A comparison of 2D game development on pure Canvas/JS versus the Godot engine. How Godot simplified my gamedev journey.",
-        post1_content: `<p>Creating your first game is always a mix of euphoria and despair. My first project was in pure JavaScript. I faced the challenge that managing the game loop and collision detection required immense attention.</p><h3>Mistakes I learned from in JS:</h3><ul><li>**Monolithic Logic Dump**: Trying to cram all logic into a single file.</li><li>FPS issues: Using <strong>setInterval</strong> instead of <strong>requestAnimationFrame</strong>.</li></ul><p>Now in **Godot 4**, many of these problems are solved by the engine, allowing me to focus on game design.</p>`,
-        post2_title: "5 Libraries for Web Animations", post2_date: "September 28, 2025",
-        post2_summary: "An overview of tools that help me bring my web portfolio to life, from lightweight CSS solutions to powerful JS frameworks.",
-        post2_content: `<p>Animation is the soul of the modern web. Here are five tools I'm mastering:</p><ol><li>**Tailwind CSS Transitions:** Perfect for quick UI animations.</li><li>**GSAP (GreenSock):** The professional standard for complex animations.</li><li>**Lottie:** For importing animations from After Effects.</li><li>**Three.js:** When you need 3D animation.</li><li>**Framer Motion (for React):** An easy way to add transitions in React apps.</li></ol>`,
-        post3_title: "Game Design Thoughts: How to Survive in 2D", post3_date: "September 15, 2025",
-        post3_summary: "Graphics or gameplay? Reflections on what makes a game truly great and why mechanics are more important than visuals.",
-        post3_content: `<p>In the world of indie gamedev, you often have to make choices. Are graphics always crucial?</p><h3>Gameplay is King</h3><p>My experience shows that players will forgive simple graphics if the mechanics are deep and engaging. This is especially critical when you're a solo developer focusing on **2D development**.</p><p>I always stick to the principle: **"Gameplay first, polish later."** This allows for rapid testing of ideas and discarding failed ones early.</p>`,
-        contact_title: "Contact EW Studio", 
-        contact_subtitle: "We are always open to new projects and conversations. Send us a message!",
-        form_name: "Your Name", form_email: "Your Email", form_message: "Message", form_submit: "Send Message",
-        footer_text: `&copy; ${new Date().getFullYear()} EW Studio. Developed by Axel Void with <span class="text-red-500">♥</span>`,
-    },
-    
-    // -------------------------------------------------------------------------
-    // ЯПОНСКИЙ (JP)
-    // -------------------------------------------------------------------------
-    jp: {
-        page_title: "開発者ポートフォリオ: EW Studio",
-        nav_about: "スタジオについて", nav_projects: "プロジェクト", nav_blog: "ブログ", nav_contact: "連絡先",
-        hero_subtitle: "インディー2Dゲーム開発とウェブ制作", hero_title: "こんにちは、Axel Voidです",
-        hero_description: "魅力的な2Dゲームを制作するために**Godot 4**を習得中のインディー開発者です。ポートフォリオのためにウェブ開発（React/Three.js）も学んでいます。",
-        hero_button: "プロジェクトを見る",
-        about_title: "EW Studioについて", about_subtitle: "自己紹介と制作物",
-        about_p1: "EW Studio (Eclipse Work Studio) は私の個人プロジェクトです。私が唯一の開発者として、**Godot 4**を使った2Dゲーム制作に集中しています。現時点では3D開発は難しいため、2次元で深く魅力的な世界を創造することに焦点を当てています。",
-        about_p2: "並行して、自分の作品を最良の形で見せるためにウェブ開発（JavaScript、React）を学んでいます。このサイトは私のウェブ学習の旅の一部です。",
-        projects_title: "私たちのプロジェクト",
-        project_atlas_title: "プロジェクト・アトラス：デスティネーション", project_atlas_subtitle: "Godot製2Dピクセルアートゲーム（プレアルファ段階）",
-        project_atlas_desc: "コズミック・テクノホラーの雰囲気を持つ「**リバース・ブレットヘル** / **アクション・サバイバル**」ゲーム。現在、活発に開発中です。",
-        project_atlas_tags: ['Godot 4', '2D', 'ピクセルアート', 'プレアルファ', '開発中'],
-        project_atlas_lore_title: "説明（世界観）",
-        project_atlas_lore: `考えたことはあるか？ゲームはどこで終わり、運命はどこで始まるのか？「プロジェクト・アトラス」は最高の者を選ばない。その**スキル**を抽出されるべき者を選ぶ。君は**コード・ゼロ・スペース**という、中立で魂のないシミュレーションに配置された。指導者であるターミナルが要求するのは一つ、120分間生き残ることだ。`,
-        project_atlas_challenges_title: "課題と解決策",
-        project_atlas_challenges: [
-            'スタイル：Godot 4でダークでハイコントラストなビジュアルを実現する。',
-            '最適化：FPSを低下させずに2Dで画面上の数百の敵を処理する。',
-            '世界観の構築：ゲーム内のテキストを通じて深い世界観を統合する。',
-        ],
-        project_wip_title: "開発中のプロジェクト...", project_wip_subtitle: "もうすぐ面白いものが登場します。",
-        project_wip_desc: "このプロジェクトは初期段階です。詳細は後日公開します。",
-        project_wip_tags: ['近日公開'],
-        btn_back_to_projects: "プロジェクト一覧に戻る", btn_view_details: "詳細を見る", btn_steam_page: "Steamページ", btn_playmarket_page: "Play Marketページ", status_soon: "近日公開",
-        blog_title: "開発ブログ", btn_read_more: "続きを読む →", btn_back_to_blog: "ブログ一覧に戻る",
-        post1_title: "なぜJSからGodot 4に移行したのか", post1_date: "2025年10月06日",
-        post1_summary: "純粋なCanvas/JSでの2Dゲーム開発とGodotエンジンでの開発を比較。Godotが私のゲーム開発の道をいかに簡素化したか。",
-        post1_content: `<p>初めてのゲームを作るときは、いつも幸福感と絶望が入り混じった気持ちになります。私の最初のプロジェクトは純粋なJavaScriptでした。ゲームループの管理や衝突検出が非常に注意を要することに直面しました。</p><h3>JSで学んだ間違い：</h3><ul><li>**ロジックの集中**: すべてのロジックを1つのファイルに詰め込もうとすること。</li><li>FPSの問題：<strong>requestAnimationFrame</strong> の代わりに <strong>setInterval</strong> を使用すること。</li></ul><p>今では**Godot 4**で、これらの問題の多くはエンジンによって解決され、ゲームデザインに集中できるようになりました。</p>`,
-        post2_title: "ウェブアニメーションのための5つのライブラリ", post2_date: "2025年09月28日",
-        post2_summary: "軽量なCSSソリューションから強力なJSフレームワークまで、私のウェブポートフォリオを生き生きとさせるツールを紹介します。",
-        post2_content: `<p>アニメーションは現代のウェブの魂です。私が習得している5つのツールはこちらです：</p><ol><li>**Tailwind CSS Transitions:** 素早いUIアニメーションに最適。</li><li>**GSAP (GreenSock):** 複雑なアニメーションのプロ標準。</li><li>**Lottie:** After Effectsからアニメーションをインポートするため。</li><li>**Three.js:** 3Dアニメーションが必要な場合。</li><li>**Framer Motion (React用):** Reactアプリにトランジションを簡単に追加する方法。</li></ol>`,
-        post3_title: "ゲームデザインの考察：2Dで生き残る方法", post3_date: "2025年09月15日",
-        post3_summary: "グラフィックかゲームプレイか？ゲームを本当に素晴らしいものにするものは何か、そしてなぜビジュアルよりメカニクスが重要なのかについての考察。",
-        post3_content: `<p>インディーゲーム開発の世界では、しばしば選択を迫られます。グラフィックは常に重要なのでしょうか？</p><h3>ゲームプレイこそが王様</h3><p>私の経験では、メカニクスが深く魅力的であれば、プレイヤーはシンプルなグラフィックを許してくれます。これは、特に**2D開発**に集中しているソロ開発者にとって重要です。</p><p>私は常に**「まずゲームプレイ、次に磨き上げ」**という原則に従っています。これにより、アイデアを迅速にテストし、失敗したものを早期に排除できます。</p>`,
-        contact_title: "EW Studioへのお問い合わせ", 
-        contact_subtitle: "新しいプロジェクトや会話をいつでも歓迎します。メッセージをお送りください！",
-        form_name: "お名前", form_email: "メールアドレス", form_message: "メッセージ", form_submit: "メッセージを送信",
-        footer_text: `&copy; ${new Date().getFullYear()} EW Studio. Axel Voidが<span class="text-red-500">♥</span>を込めて開発しました`,
-    },
-    
-    // -------------------------------------------------------------------------
-    // КОРЕЙСКИЙ (KO) - Новый язык
-    // -------------------------------------------------------------------------
-    ko: {
-        page_title: "개발자 포트폴리오: EW 스튜디오",
-        nav_about: "스튜디오 소개", nav_projects: "프로젝트", nav_blog: "블로그", nav_contact: "연락처",
-        hero_subtitle: "인디 2D 게임 개발 및 웹 실습", hero_title: "안녕하세요, Axel Void입니다",
-        hero_description: "매력적인 2D 게임을 만들기 위해 **Godot 4**를 숙달하고 있는 인디 개발자이며, 포트폴리오 구축을 위해 웹 개발(React/Three.js)도 함께 배우고 있습니다.",
-        hero_button: "프로젝트 보기",
-        about_title: "EW 스튜디오 소개", about_subtitle: "저는 누구이며 무엇을 만드나요?",
-        about_p1: "EW 스튜디오(Eclipse Work Studio)는 저의 개인 프로젝트입니다. 저는 유일한 개발자로서 **Godot 4**를 이용한 2D 게임 제작에 집중하고 있습니다. 현재로서는 3D 개발은 관심사가 아니므로, 2차원 공간에서 깊이 있고 매력적인 세계를 창조하는 데 초점을 맞추고 있습니다.",
-        about_p2: "동시에 웹 개발(JavaScript, React)을 적극적으로 배우며 저의 작업물을 가장 돋보이게 선보일 수 있는 방법을 모색하고 있습니다. 이 웹사이트는 웹 개발 학습 과정의 일부입니다.",
-        projects_title: "저의 프로젝트",
-        project_atlas_title: "Project Atlas: Destination", project_atlas_subtitle: "프리-알파 단계의 Godot 기반 2D 픽셀 아트 게임",
-        project_atlas_desc: "코스믹 테크노 호러(Cosmic Techno-Horror) 분위기의 **리버스 불렛 헬(Reverse Bullet Hell)** / **액션 서바이벌(Action Survival)** 장르 게임입니다. 현재 활발하게 개발 중입니다.",
-        project_atlas_tags: ['Godot 4', '2D', '픽셀 아트', '프리-알파', '개발 중'],
-        project_atlas_lore_title: "설명 (배경 스토리)",
-        project_atlas_lore: `Project Atlas는 최고를 선택하지 않습니다. 추출되어야 할 **기술(Skill)**을 가진 자를 선택합니다. 당신은 중립적이고 영혼 없는 시뮬레이션인 **코드 제로 공간(Code Zero Space)**에 배치되었습니다. 당신의 멘토인 터미널은 단 하나를 요구합니다. 120분 동안 버티는 것.`,
-        project_atlas_challenges_title: "도전 과제 및 해결책",
-        project_atlas_challenges: [
-            '스타일: Godot 4에서 어둡고 고대비의 비주얼 스타일 구현.',
-            '최적화: 2D에서 FPS 저하 없이 수백 개의 적을 화면에서 처리.',
-            '배경 스토리 개발: 인게임 텍스트를 통해 깊은 배경 스토리를 통합.',
-        ],
-        project_wip_title: "개발 중인 프로젝트...", project_wip_subtitle: "곧 흥미로운 무언가가 공개됩니다.",
-        project_wip_desc: "이 프로젝트는 초기 단계입니다. 자세한 내용은 나중에 공개될 예정입니다.",
-        project_wip_tags: ['곧 공개'],
-        btn_back_to_projects: "프로젝트로 돌아가기", btn_view_details: "세부 정보 보기", btn_steam_page: "Steam 페이지", btn_playmarket_page: "Play Market 페이지", status_soon: "곧 공개",
-        blog_title: "개발 블로그", btn_read_more: "더 읽어보기 →", btn_back_to_blog: "블로그로 돌아가기",
-        post1_title: "JS에서 Godot 4로 전환한 이유", post1_date: "2025년 10월 06일",
-        post1_summary: "순수 Canvas/JS와 Godot 엔진에서의 2D 게임 개발 비교. Godot이 저의 게임 개발 여정을 어떻게 단순화했는지.",
-        post1_content: `<p>첫 게임을 만드는 것은 언제나 행복감과 절망감이 뒤섞인 경험입니다. 저의 첫 프로젝트는 순수 JavaScript로 진행했습니다. 게임 루프 관리와 충돌 감지에 엄청난 주의를 기울여야 한다는 어려움에 직면했습니다.</p><h3>JS에서 배운 실수:</h3><ul><li>**로직 집중**: 모든 로직을 단일 파일에 밀어 넣으려 한 시도.</li><li>FPS 문제: <strong>requestAnimationFrame</strong> 대신 <strong>setInterval</strong> 사용.</li></ul><p>이제 **Godot 4**에서는 이러한 문제의 상당수가 엔진에 의해 해결되어 게임 디자인에 집중할 수 있게 되었습니다.</p>`,
-        post2_title: "웹 애니메이션을 위한 5가지 라이브러리", post2_date: "2025년 09월 28일",
-        post2_summary: "경량 CSS 솔루션부터 강력한 JS 프레임워크까지, 저의 웹 포트폴리오에 생동감을 불어넣는 도구들을 소개합니다.",
-        post2_content: `<p>애니메이션은 현대 웹의 영혼입니다. 제가 숙달하고 있는 5가지 도구입니다:</p><ol><li>**Tailwind CSS Transitions:** 빠른 UI 애니메이션에 이상적.</li><li>**GSAP (GreenSock):** 복잡한 애니메이션을 위한 전문가 표준.</li><li>**Lottie:** After Effects 애니메이션을 가져오기 위해.</li><li>**Three.js:** 3D 애니메이션이 필요할 때.</li><li>**Framer Motion (React용):** React 앱에 전환 효과를 쉽게 추가하는 방법.</li></ol>`,
-        post3_title: "게임 디자인 생각: 2D에서 살아남는 법", post3_date: "2025년 09월 15일",
-        post3_summary: "그래픽 대 게임 플레이? 게임을 진정으로 위대하게 만드는 요소와 비주얼보다 메커니즘이 더 중요한 이유에 대한 고찰.",
-        post3_content: `<p>인디 게임 개발 세계에서는 종종 선택을 해야 합니다. 그래픽이 항상 결정적인 요소일까요?</p><h3>게임 플레이가 왕입니다</h3><p>저의 경험에 따르면, 메커니즘이 깊이 있고 매력적이라면 플레이어는 단순한 그래픽을 용서합니다. 이는 **2D 개발**에 집중하는 단독 개발자에게 특히 중요합니다.</p><p>저는 항상 **"선 게임 플레이, 후 폴리싱"**이라는 원칙을 고수합니다. 이를 통해 아이디어를 빠르게 테스트하고 실패한 아이디어를 조기에 걸러낼 수 있습니다.</p>`,
-        contact_title: "EW 스튜디오에 문의하기", 
-        contact_subtitle: "저희는 새로운 프로젝트와 대화에 언제나 열려 있습니다. 메시지를 보내주세요!",
-        form_name: "이름", form_email: "이메일", form_message: "메시지", form_submit: "메시지 보내기",
-        footer_text: `&copy; ${new Date().getFullYear()} EW Studio. Axel Void가 <span class="text-red-500">♥</span>를 담아 개발했습니다`,
-    },
-    
-    // -------------------------------------------------------------------------
-    // КИТАЙСКИЙ (ZH-CN) - Новый язык (Упрощенный)
-    // -------------------------------------------------------------------------
-    zh: {
-        page_title: "开发者作品集：EW Studio",
-        nav_about: "关于工作室", nav_projects: "项目", nav_blog: "博客", nav_contact: "联系我们",
-        hero_subtitle: "独立 2D 游戏开发与 Web 实践", hero_title: "大家好，我是 Axel Void",
-        hero_description: "正在精进 **Godot 4** 以制作引人入胜的 2D 独立游戏，并同时学习 Web 开发 (React/Three.js) 来构建我的作品集。",
-        hero_button: "查看项目",
-        about_title: "关于 EW Studio", about_subtitle: "我是谁，我创造了什么？",
-        about_p1: "EW Studio (Eclipse Work Studio) 是我的个人项目。我是唯一的开发者，专注于精通 **Godot 4** 来制作 2D 游戏。目前，3D 开发不是我的方向，我专注于在二维空间中创造深刻而迷人的世界。",
-        about_p2: "同时，我积极学习 Web 开发 (JavaScript, React)，以便以最佳方式展示我的作品。这个网站就是我的 Web 学习之旅的一部分。",
-        projects_title: "我的项目",
-        project_atlas_title: "Project Atlas: Destination", project_atlas_subtitle: "Godot 引擎制作的 2D 像素艺术游戏，处于预 Alpha 阶段",
-        project_atlas_desc: "一款带有宇宙技术恐怖氛围的 **反向弹幕地狱 (Reverse Bullet Hell)** / **动作生存 (Action Survival)** 游戏。项目正在积极开发中。",
-        project_atlas_tags: ['Godot 4', '2D', '像素艺术', '预 Alpha', '开发中'],
-        project_atlas_lore_title: "描述 (背景故事)",
-        project_atlas_lore: `Project Atlas 不选择最优者，它选择那些**技能 (Skill)**必须被提取的人。你被置于**零号代码空间 (Code Zero Space)**——一个中立、没有灵魂的模拟环境。你的导师终端（Terminal）只有一个要求：坚持 120 分钟。`,
-        project_atlas_challenges_title: "挑战与解决方案",
-        project_atlas_challenges: [
-            '风格：在 Godot 4 中实现黑暗、高对比度的视觉风格。',
-            '优化：在 2D 模式下，屏幕上处理数百个敌人而不掉帧 (FPS)。',
-            '背景故事开发：通过游戏内文本整合深刻的背景故事。',
-        ],
-        project_wip_title: "项目开发中...", project_wip_subtitle: "一些有趣的东西即将到来。",
-        project_wip_desc: "此项目处于早期阶段。更多细节将稍后公布。",
-        project_wip_tags: ['即将推出'],
-        btn_back_to_projects: "返回项目", btn_view_details: "查看详情", btn_steam_page: "Steam 页面", btn_playmarket_page: "Play Market 页面", status_soon: "即将推出",
-        blog_title: "开发博客", btn_read_more: "继续阅读 →", btn_back_to_blog: "返回博客",
-        post1_title: "我为何从 JS 转向 Godot 4", post1_date: "2025年10月06日",
-        post1_summary: "纯 Canvas/JS 与 Godot 引擎进行 2D 游戏开发的比较。Godot 如何简化我的游戏开发之旅。",
-        post1_content: `<p>制作第一款游戏总是兴奋与绝望的混合体。我的第一个项目是用纯 JavaScript 完成的。我面临的挑战是，管理游戏循环和碰撞检测需要投入巨大的精力。</p><h3>我在 JS 中学到的错误：</h3><ul><li>**逻辑堆积**: 试图将所有逻辑塞进一个文件中。</li><li>FPS 问题：使用 <strong>setInterval</strong> 而非 <strong>requestAnimationFrame</strong>。</li></ul><p>现在在 **Godot 4** 中，许多此类问题都由引擎解决了，这让我能专注于游戏设计。</p>`,
-        post2_title: "5 个 Web 动画库", post2_date: "2025年09月28日",
-        post2_summary: "工具概述，从轻量级 CSS 解决方案到强大的 JS 框架，它们帮助我为我的 Web 作品集注入活力。",
-        post2_content: `<p>动画是现代 Web 的灵魂。以下是我正在掌握的五个工具：</p><ol><li>**Tailwind CSS Transitions:** 适用于快速 UI 动画。</li><li>**GSAP (GreenSock):** 复杂动画的专业标准。</li><li>**Lottie:** 用于导入 After Effects 动画。</li><li>**Three.js:** 当需要 3D 动画时。</li><li>**Framer Motion (for React):** 在 React 应用中添加过渡效果的简单方法。</li></ol>`,
-        post3_title: "游戏设计思考：如何在 2D 中生存", post3_date: "2025年09月15日",
-        post3_summary: "图形还是玩法？关于什么让一款游戏真正伟大以及为什么机制比视觉效果更重要的思考。",
-        post3_content: `<p>在独立游戏开发的世界里，你常常需要做出选择。图形总是至关重要的吗？</p><h3>玩法为王</h3><p>我的经验表明，如果机制深刻且引人入胜，玩家会原谅简单的图形。当你专注于 **2D 开发**时，这一点尤为关键。</p><p>我始终坚持的原则是：**“先玩法，后打磨”**。这使得我可以快速测试想法，并尽早淘汰不成功的方案。</p>`,
-        contact_title: "联系 EW Studio", 
-        contact_subtitle: "我们随时欢迎新项目和交流。请给我们发送消息！",
-        form_name: "你的名字", form_email: "你的电子邮件", form_message: "消息", form_submit: "发送消息",
-        footer_text: `&copy; ${new Date().getFullYear()} EW Studio. 由 Axel Void 倾注 <span class="text-red-500">♥</span> 设计与开发`,
-    },
+    projects_title: "Мои проекты",
+    project_atlas_title: "Project Atlas: Destination",
+    project_atlas_subtitle: "Пиксельная 2D-игра на Godot — пре-альфа",
+    project_atlas_desc: "Атмосферный **Reverse Bullet Hell / Action Survival** с элементами космического техно-хоррора. Проект в активной разработке.",
+    project_atlas_tags: ['Godot 4', '2D', 'Pixel Art', 'Pre-alpha', 'В разработке'],
 
-    // -------------------------------------------------------------------------
-    // НЕМЕЦКИЙ (DE) - Новый язык
-    // -------------------------------------------------------------------------
-    de: {
-        page_title: "Entwickler-Portfolio: EW Studio",
-        nav_about: "Über das Studio", nav_projects: "Projekte", nav_blog: "Blog", nav_contact: "Kontakt",
-        hero_subtitle: "Indie 2D-Spielentwicklung & Web-Praxis", hero_title: "Hallo, ich bin Axel Void",
-        hero_description: "Ein Indie-Entwickler, der **Godot 4** meistert, um fesselnde 2D-Spiele zu entwickeln, und parallel Webentwicklung (React/Three.js) für sein Portfolio lernt.",
-        hero_button: "Projekte ansehen",
-        about_title: "Über EW Studio", about_subtitle: "Wer bin ich und was erschaffe ich?",
-        about_p1: "EW Studio (Eclipse Work Studio) ist mein persönliches Projekt. Ich bin der einzige Entwickler und konzentriere mich darauf, **Godot 4** zu beherrschen, um 2D-Spiele zu erstellen. Derzeit liegt mein Fokus nicht auf 3D-Entwicklung, sondern auf der Schaffung tiefgründiger und fesselnder Welten in zwei Dimensionen.",
-        about_p2: "Gleichzeitig beschäftige ich mich aktiv mit Webentwicklung (JavaScript, React), um meine Arbeit bestmöglich zu präsentieren. Diese Website ist Teil meiner Lernreise im Webbereich.",
-        projects_title: "Meine Projekte",
-        project_atlas_title: "Project Atlas: Destination", project_atlas_subtitle: "Ein 2D Pixel Art Godot Spiel im Pre-Alpha-Stadium",
-        project_atlas_desc: "Ein **Reverse Bullet Hell** / **Action Survival** Spiel mit einer Cosmic Techno-Horror-Atmosphäre. Das Projekt befindet sich in aktiver Entwicklung.",
-        project_atlas_tags: ['Godot 4', '2D', 'Pixel Art', 'Pre-Alpha', 'In Entwicklung'],
-        project_atlas_lore_title: "Beschreibung (Lore)",
-        project_atlas_lore: `Project Atlas wählt nicht die Besten. Es wählt diejenigen, deren **Fähigkeit (Skill)** extrahiert werden muss. Du wurdest in den **Code Zero Space** platziert – eine neutrale, seelenlose Simulation. Dein Mentor, Terminal, verlangt nur eines: 120 Minuten durchzuhalten.`,
-        project_atlas_challenges_title: "Herausforderungen & Lösungen",
-        project_atlas_challenges: [
-            'Stil: Implementierung eines düsteren, kontrastreichen visuellen Stils in Godot 4.',
-            'Optimierung: Umgang mit Hunderten von Gegnern auf dem Bildschirm in 2D ohne FPS-Einbrüche.',
-            'Lore-Entwicklung: Integration einer tiefgründigen Geschichte durch In-Game-Texte.',
-        ],
-        project_wip_title: "Projekt in Arbeit...", project_wip_subtitle: "Etwas Interessantes kommt bald.",
-        project_wip_desc: "Dieses Projekt befindet sich in einer frühen Phase. Details folgen später.",
-        project_wip_tags: ['Kommt bald'],
-        btn_back_to_projects: "Zurück zu den Projekten", btn_view_details: "Details ansehen", btn_steam_page: "Steam-Seite", btn_playmarket_page: "Play Market Seite", status_soon: "Bald verfügbar",
-        blog_title: "Entwickler-Blog", btn_read_more: "Weiterlesen →", btn_back_to_blog: "Zurück zum Blog",
-        post1_title: "Warum ich von JS zu Godot 4 gewechselt bin", post1_date: "06. Oktober 2025",
-        post1_summary: "Ein Vergleich der 2D-Spielentwicklung auf reinem Canvas/JS vs. der Godot-Engine. Wie Godot meinen Weg im GameDev vereinfacht hat.",
-        post1_content: `<p>Das Erstellen des ersten Spiels ist immer eine Mischung aus Euphorie und Verzweiflung. Mein erstes Projekt war in reinem JavaScript. Ich stand vor der Herausforderung, dass die Verwaltung des Game-Loops und die Kollisionserkennung enorme Aufmerksamkeit erforderten.</p><h3>Fehler, aus denen ich in JS gelernt habe:</h3><ul><li>**Logik-Sammelbecken**: Der Versuch, die gesamte Logik in einer einzigen Datei unterzubringen.</li><li>FPS-Probleme: Verwendung von <strong>setInterval</strong> anstelle von <strong>requestAnimationFrame</strong>.</li></ul><p>In **Godot 4** sind viele dieser Probleme nun durch die Engine gelöst, was mir erlaubt, mich auf das Game Design zu konzentrieren.</p>`,
-        post2_title: "5 Bibliotheken für Web-Animationen", post2_date: "28. September 2025",
-        post2_summary: "Eine Übersicht über Tools, die mir helfen, meinem Web-Portfolio Leben einzuhauchen – von leichten CSS-Lösungen bis hin zu mächtigen JS-Frameworks.",
-        post2_content: `<p>Animation ist die Seele des modernen Webs. Hier sind fünf Tools, die ich beherrsche:</p><ol><li>**Tailwind CSS Transitions:** Ideal für schnelle UI-Animationen.</li><li>**GSAP (GreenSock):** Der professionelle Standard für komplexe Animationen.</li><li>**Lottie:** Für den Import von After Effects-Animationen.</li><li>**Three.js:** Wenn 3D-Animation benötigt wird.</li><li>**Framer Motion (für React):** Eine einfache Möglichkeit, Übergänge in React-Anwendungen hinzuzufügen.</li></ol>`,
-        post3_title: "Gedanken zum Game Design: Wie man in 2D überlebt", post3_date: "15. September 2025",
-        post3_summary: "Grafik oder Gameplay? Überlegungen dazu, was ein Spiel wirklich großartig macht und warum die Mechanik wichtiger ist als die Optik.",
-        post3_content: `<p>In der Indie-GameDev-Welt muss man oft Entscheidungen treffen. Ist Grafik immer entscheidend?</p><h3>Gameplay ist König</h3><p>Meine Erfahrung zeigt, dass Spieler einfache Grafiken verzeihen, wenn die Mechanik tiefgründig und fesselnd ist. Dies ist besonders wichtig, wenn man als Einzelentwickler auf **2D-Entwicklung** fokussiert ist.</p><p>Ich halte mich stets an das Prinzip: **„Zuerst das Gameplay, dann der Feinschliff“**. Dies ermöglicht es, Ideen schnell zu testen und Misserfolge frühzeitig auszusortieren.</p>`,
-        contact_title: "EW Studio kontaktieren", 
-        contact_subtitle: "Wir sind immer offen für neue Projekte und Gespräche. Schreiben Sie uns eine Nachricht!",
-        form_name: "Ihr Name", form_email: "Ihre E-Mail", form_message: "Nachricht", form_submit: "Nachricht senden",
-        footer_text: `&copy; ${new Date().getFullYear()} EW Studio. Von Axel Void mit <span class="text-red-500">♥</span> entwickelt`,
-    },
+    project_atlas_lore_title: "Лор",
+    project_atlas_lore: `Project Atlas не ищет «лучших» — он выбирает тех, чью способность можно извлечь и переписать. Ты оказался в «Code Zero» — холодной, нейтральной симуляции без жалости и лишних слов. Наставник с кодовым именем Терминал даёт только одно условие: выжить 120 минут. Всё остальное — испытание и загадка.`,
+
+    project_atlas_challenges_title: "Вызовы и решения",
+    project_atlas_challenges: [
+      'Стиль: передать мрачную, высококонтрастную эстетику в Godot 4, не потеряв читаемость геймплея.',
+      'Оптимизация: удерживать стабильный FPS при сотнях врагов в кадре в 2D.',
+      'Нарратив: встроить глубокий лор через внутриигровые тексты и окружение, не нарушая ритм игры.',
+    ],
+
+    project_wip_title: "Проект в разработке...", project_wip_subtitle: "Скоро будет больше деталей.",
+    project_wip_desc: "Проект на ранней стадии — следите за обновлениями.",
+    project_wip_tags: ['Скоро'],
+
+    btn_back_to_projects: "← К проектам", btn_view_details: "Детали", btn_steam_page: "Steam", btn_playmarket_page: "Play Market", status_soon: "Скоро",
+
+    blog_title: "Блог разработки", btn_read_more: "Читать далее →", btn_back_to_blog: "← К блогу",
+
+    post1_title: "Почему я перешёл с JS на Godot 4", post1_date: "06 октября 2025",
+    post1_summary: "Сравнение чистого Canvas/JS и Godot: какие задачи ушли с движком, а что осталось за нами.",
+    post1_content: `<p>Первая игра — это смесь энтузиазма и горьких уроков. Мой первый опыт был на чистом JavaScript: управление циклом игры и столкновениями отнимало много времени и сил.</p>
+      <h3>Чему меня научил JS:</h3>
+      <ul>
+        <li><strong>Антипаттерн "всё в одном файле"</strong>: логика быстро превращается в бессистемную кучу.</li>
+        <li><strong>Проблемы с FPS</strong>: setInterval вместо requestAnimationFrame — классика провалов.</li>
+      </ul>
+      <p>В **Godot 4** многие рутинные проблемы решает сам движок, что даёт больше времени на дизайн и механику — а это то, что действительно важно.</p>`,
+
+    post2_title: "5 библиотек для веб-анимаций", post2_date: "28 сентября 2025",
+    post2_summary: "От лёгких CSS-решений до мощных JS-фреймворков — инструменты, которые оживляют портфолио.",
+    post2_content: `<p>Анимация — это вкус интерфейса. Пять инструментов, которые мне нравятся:</p>
+      <ol>
+        <li><strong>Tailwind CSS Transitions</strong> — быстро и аккуратно для UI.</li>
+        <li><strong>GSAP (GreenSock)</strong> — профуровень для сложных эффектов.</li>
+        <li><strong>Lottie</strong> — импорт анимаций из After Effects.</li>
+        <li><strong>Three.js</strong> — когда нужен 3D-эффект.</li>
+        <li><strong>Framer Motion</strong> (для React) — удобные переходы в приложениях.</li>
+      </ol>`,
+
+    post3_title: "О геймдизайне: как выжить в 2D", post3_date: "15 сентября 2025",
+    post3_summary: "Графика или механика? Почему сильная механика важнее красивой картинки.",
+    post3_content: `<p>В инди-мире часто приходится выбирать. Хорошая графика не спасёт слабую механику.</p>
+      <h3>Геймплей — король</h3>
+      <p>Игроки простят упрощённую графику, если механика цепляет. Для соло-разработчика это жизненно важно: сначала рабочая механика, потом шлифовка.</p>`,
+
+    contact_title: "Связаться с EW Studio",
+    contact_subtitle: "Открыт для разговоров и совместных проектов — напишите мне!",
+    form_name: "Ваше имя", form_email: "Email", form_message: "Сообщение", form_submit: "Отправить",
+
+    footer_text: `&copy; ${new Date().getFullYear()} EW Studio. Разработано Axel Void с <span class="text-red-500">♥</span>`
+  },
+
+  // -------------------------------------------------------------------------
+  // ТАТАРСКИ (TT)
+  // -------------------------------------------------------------------------
+  tt: {
+    page_title: "Эшләнмәче портфолиосы — EW Studio",
+    nav_about: "Студия турында", nav_projects: "Проектлар", nav_blog: "Блог", nav_contact: "Элемтә",
+    hero_subtitle: "Инди 2D-уйын эшләве һәм веб-практика",
+    hero_title: "Сәлам — мин Axel Void",
+    hero_description: "Мин — инди-эшләнмәче: **Godot 4** өйрәнәм, мавыктыргыч 2D уйларын ясыйм һәм портфолио өчен веб-эшләнмәләр (React / Three.js) өйрәнәм.",
+    hero_button: "Проектларны карау",
+
+    about_title: "EW Studio турында", about_subtitle: "Мин кем һәм нәрсә булдырам?",
+    about_p1: "EW Studio — минем шәхси проектым. Мин бер эшләнмәче буларак **Godot 4** та 2D уйларын булдыруга игътибар итәм. 3D-гә әлегә укымыйм — ике үлчәмдә тирән атмосфера төзү яклы.",
+    about_p2: "Шул ук вакытта веб-технологияләрне (JavaScript, React) өйрәнәм, эшләремне матур итеп күрсәтү өчен. Бу сайт — өйрәнү юлымның бер өлеше. (Һәм мин еш кына багны көлеп очратам — ул да кечкенә тарих.)",
+
+    projects_title: "Минем проектлар",
+    project_atlas_title: "Project Atlas: Destination",
+    project_atlas_subtitle: "Godot’та пиксель 2D — пре-альфа",
+    project_atlas_desc: "Cosmic Techno-Horror хисле **Reverse Bullet Hell / Action Survival** жанрында уен. Проект актив эшләнүдә.",
+    project_atlas_tags: ['Godot 4', '2D', 'Pixel Art', 'Pre-alpha', 'Үсештә'],
+
+    project_atlas_lore_title: "Лор (тасвир)",
+    project_atlas_lore: `Project Atlas иң осталарны эзләми — ул сине сайлап ала, сине өйрәнеп, сине сынарга тели. Сине «Code Zero» киңлегенә урнаштырганнар — салкын, рәттән тайпылмаган симуляция. Терминал исемле остазның таләбе гади: 120 минут исән кал. Күбрәге — уенның сере.`,
+
+    project_atlas_challenges_title: "Кыенлыклар һәм чишелешләр",
+    project_atlas_challenges: [
+      'Стиль: Godot 4тә мрачен, югары контрастлы визуаль стиль тудыру, шул ук вакытта уенны укыла торган итү.',
+      'Оптимизация: 2D-да экранда йөзләрчә дошманны тоту һәм FPSны саклау.',
+      'Лор үстерү: уен эчендәге текстлар һәм мохит аша тарихны табигый итеп кертү.',
+    ],
+
+    project_wip_title: "Үсештәге проект...", project_wip_subtitle: "Тиздән яңалыклар булыр.",
+    project_wip_desc: "Проект хәзерге вакытта башлангыч стадиядә — яңалыклар киләчәк.",
+    project_wip_tags: ['Тиздән'],
+
+    btn_back_to_projects: "← Проектларга", btn_view_details: "Детальләр", btn_steam_page: "Steam", btn_playmarket_page: "Play Market", status_soon: "Тиздән",
+
+    blog_title: "Үсеш блогы", btn_read_more: "Укыту дәвамы →", btn_back_to_blog: "← Блогка",
+
+    post1_title: "Ни өчен мин JS’тан Godot 4кә күчтем", post1_date: "2025-нче ел, 6 октябрь",
+    post1_summary: "Чиста Canvas/JS белән Godot-тагы 2D эшләвен чагыштыру — ниләр җиңеләде, нәрсә калды.",
+    post1_content: `<p>Беренче уен ясау — зур дәрт һәм кече ачышлар. Мин JavaScript белән башладым: уен циклы һәм бәрелешләр белән идарә итү күп вакыт һәм игътибар таләп итте.</p>
+      <h3>JSтан алган хаталарым:</h3>
+      <ul>
+        <li><strong>Бөтен логиканы бергә туплау</strong>: код тиз буталчыкка әйләнә.</li>
+        <li><strong>FPS проблемалары</strong>: requestAnimationFrame урынына setInterval куллану — ялгыш үрнәк.</li>
+      </ul>
+      <p>Хәзер **Godot 4** күп рутинаны үз өстенә ала, һәм миңа уеннарның күңеленә — механика һәм атмосферага — күбрәк игътибар бирергә мөмкинлек бар.</p>`,
+
+    post2_title: "Веб-анимацияләр өчен 5 китапханә", post2_date: "2025-нче ел, 28 сентябрь",
+    post2_summary: "Сайтка хәрәкәт өстәүче кораллар — җиңел CSS-тан көчле JS-челтәрләргә.",
+    post2_content: `<p>Анимация — вебның җаны. Мин кулланган 5 корал:</p>
+      <ol>
+        <li><strong>Tailwind CSS Transitions</strong> — тиз һәм җиңел.</li>
+        <li><strong>GSAP</strong> — катлаулы анимацияләр өчен.</li>
+        <li><strong>Lottie</strong> — After Effects анимацияләрен алып килү.</li>
+        <li><strong>Three.js</strong> — 3D кирәк булса.</li>
+        <li><strong>Framer Motion</strong> — React өчен күчешләр.</li>
+      </ol>`,
+
+    post3_title: "Геймдизайн фикерләре: 2Dда ничек исән калырга", post3_date: "2025-нче ел, 15 сентябрь",
+    post3_summary: "Графика яки механика — уенны нинди итә? Ни өчен механика беренче урында.",
+    post3_content: `<p>Инди дөньясында сайлау мәҗбүри: графика яки механика? Күпчелек вакытта — механика өстен.</p>
+      <h3>Геймплей — төп</h3>
+      <p>Тирән механика булса, уенчылар гади рәсемне кичерә. Мин һәрвакыт «алдына механика, аннан полировка» кагыйдәсенә таянам — ул тиз сынау һәм иртә кире кагу мөмкинлеге бирә.</p>`,
+
+    contact_title: "EW Studio белән элемтә", contact_subtitle: "Яңа проектлар һәм сөйләшүләргә һәрвакыт ачыл! Хәбәр языгыз.",
+    form_name: "Исемең", form_email: "Email", form_message: "Хәбәр", form_submit: "Җибәрү",
+
+    footer_text: `&copy; ${new Date().getFullYear()} EW Studio. Axel Void тарафыннан <span class="text-red-500">♥</span> белән эшләнде`
+  },
+
+  // -------------------------------------------------------------------------
+  // АНГЛИЙСКИЙ (EN)
+  // -------------------------------------------------------------------------
+  en: {
+    page_title: "Developer Portfolio — EW Studio",
+    nav_about: "About", nav_projects: "Projects", nav_blog: "Blog", nav_contact: "Contact",
+    hero_subtitle: "Indie 2D Game Dev · Web Practice",
+    hero_title: "Hi — I'm Axel Void",
+    hero_description: "Indie developer mastering **Godot 4** to craft compelling 2D games, while sharpening web skills (React / Three.js) to present my work.",
+    hero_button: "View Projects",
+
+    about_title: "About EW Studio", about_subtitle: "Who I am — what I build",
+    about_p1: "EW Studio (Eclipse Work Studio) is my personal game project. I'm a solo developer focused on **Godot 4**, building deep, atmospheric worlds in 2D. 3D can wait — I prefer polishing pixels and mechanics for now.",
+    about_p2: "At the same time, I'm learning web development (JavaScript, React) so the portfolio looks as good as the games. This site is part of that journey. (Yes — I fix bugs with coffee.)",
+
+    projects_title: "My Projects",
+    project_atlas_title: "Project Atlas: Destination",
+    project_atlas_subtitle: "2D Pixel Art Godot game — pre-alpha",
+    project_atlas_desc: "A Cosmic Techno-Horror flavored **Reverse Bullet Hell / Action Survival**. Actively in development.",
+    project_atlas_tags: ['Godot 4', '2D', 'Pixel Art', 'Pre-Alpha', 'In Development'],
+
+    project_atlas_lore_title: "Lore",
+    project_atlas_lore: `Project Atlas doesn't pick heroes — it selects those whose Skill can be harvested. You are uploaded into Code Zero: a neutral, clinical simulation designed to test and extract. Terminal, your mentor, gives a single rule: survive for 120 minutes. Everything else is the experiment.`,
+
+    project_atlas_challenges_title: "Challenges & Solutions",
+    project_atlas_challenges: [
+      'Style: achieve a dark, high-contrast look in Godot 4 while keeping gameplay readable.',
+      'Optimization: handle hundreds of enemies on screen in 2D without FPS drops.',
+      'Lore: weave deep narrative through in-game texts and environmental cues.',
+    ],
+
+    project_wip_title: "Project in progress...", project_wip_subtitle: "More updates coming soon.",
+    project_wip_desc: "Early stage — stay tuned for updates.",
+    project_wip_tags: ['Coming Soon'],
+
+    btn_back_to_projects: "← Back to projects", btn_view_details: "View details", btn_steam_page: "Steam Page", btn_playmarket_page: "Play Market", status_soon: "Coming Soon",
+
+    blog_title: "Development Blog", btn_read_more: "Read more →", btn_back_to_blog: "← Back to blog",
+
+    post1_title: "Why I switched from JS to Godot 4", post1_date: "October 06, 2025",
+    post1_summary: "Comparing pure Canvas/JS vs Godot for 2D games — what went smoother with an engine.",
+    post1_content: `<p>Making your first game is a cocktail of excitement and hard lessons. My first project used pure JavaScript; managing the game loop and collisions demanded a lot of attention.</p>
+      <h3>Mistakes I learned from in JS:</h3>
+      <ul>
+        <li><strong>Monolithic code</strong>: squeezing all logic into one file becomes a mess fast.</li>
+        <li><strong>FPS pitfalls</strong>: using <strong>setInterval</strong> instead of <strong>requestAnimationFrame</strong>.</li>
+      </ul>
+      <p>With **Godot 4**, many routine issues are handled by the engine, leaving me more time to iterate on design and mechanics.</p>`,
+
+    post2_title: "5 Libraries for Web Animations", post2_date: "September 28, 2025",
+    post2_summary: "Tools I use to bring the portfolio to life — from lightweight CSS tricks to powerful JS frameworks.",
+    post2_content: `<p>Animation is the soul of modern web UI. Five tools I rely on:</p>
+      <ol>
+        <li><strong>Tailwind CSS Transitions</strong> — quick UI polish.</li>
+        <li><strong>GSAP (GreenSock)</strong> — pro level for complex timing.</li>
+        <li><strong>Lottie</strong> — import After Effects animations.</li>
+        <li><strong>Three.js</strong> — when 3D is needed.</li>
+        <li><strong>Framer Motion</strong> — elegant transitions for React apps.</li>
+      </ol>`,
+
+    post3_title: "Game design thoughts: surviving in 2D", post3_date: "September 15, 2025",
+    post3_summary: "Graphics vs gameplay: why mechanics usually win.",
+    post3_content: `<p>In indie gamedev you make trade-offs. Great graphics don't save poor mechanics.</p>
+      <h3>Gameplay is king</h3>
+      <p>Players forgive simple visuals if the core mechanics are engaging. As a solo dev focused on 2D, that principle drives my process: prototype mechanics first, polish later.</p>`,
+
+    contact_title: "Contact EW Studio",
+    contact_subtitle: "Open to projects and conversations — send a message!",
+    form_name: "Your name", form_email: "Your email", form_message: "Message", form_submit: "Send",
+
+    footer_text: `&copy; ${new Date().getFullYear()} EW Studio. Developed by Axel Void with <span class="text-red-500">♥</span>`
+  },
+
+  // -------------------------------------------------------------------------
+  // ЯПОНСКИЙ (JP)
+  // -------------------------------------------------------------------------
+  jp: {
+    page_title: "開発者ポートフォリオ — EW Studio",
+    nav_about: "スタジオについて", nav_projects: "プロジェクト", nav_blog: "ブログ", nav_contact: "お問い合わせ",
+    hero_subtitle: "インディー2Dゲーム開発・ウェブ実践",
+    hero_title: "こんにちは、Axel Void です",
+    hero_description: "2Dの魅力的なゲームを作るために **Godot 4** を習得中のインディー開発者です。ポートフォリオ用にウェブ開発（React / Three.js）も学んでいます。",
+    hero_button: "プロジェクトを見る",
+
+    about_title: "EW Studio について", about_subtitle: "自己紹介と制作物",
+    about_p1: "EW Studio（Eclipse Work Studio）は私の個人プロジェクトです。一人で開発を行い、主に **Godot 4** を用いて2Dゲームを作っています。3Dはいつか挑戦したいですが、今は2Dの表現とゲーム性に集中しています。",
+    about_p2: "並行してウェブ（JavaScript, React）を学び、作品を最良の形で見せる努力をしています。このサイトはその学びの一部です。（夜中のバグ修正はコーヒーと共に。）",
+
+    projects_title: "プロジェクト",
+    project_atlas_title: "Project Atlas: Destination",
+    project_atlas_subtitle: "Godot製のピクセル2Dゲーム — プレアルファ",
+    project_atlas_desc: "コズミック・テクノホラーの雰囲気を持つ **Reverse Bullet Hell / Action Survival**。現在開発中です。",
+    project_atlas_tags: ['Godot 4', '2D', 'Pixel Art', 'Pre-Alpha', '開発中'],
+
+    project_atlas_lore_title: "世界観",
+    project_atlas_lore: `Project Atlas は「最強」を選ぶわけではない。抽出すべき“Skill”を持つ者を選ぶ。あなたは「Code Zero（コード・ゼロ）スペース」という、中立で冷たいシミュレーションに配置された。指導者のターミナルが示すのは一つ ― 120分間生き延びること。残りは試練だ。`,
+
+    project_atlas_challenges_title: "課題と対応",
+    project_atlas_challenges: [
+      'スタイル：Godot 4でダークかつハイコントラストな見た目を実現しつつ、視認性を保つこと。',
+      '最適化：2Dで画面内に数百体の敵がいてもFPSを維持すること。',
+      '物語：ゲーム内のテキストや環境で深い世界観を自然に語らせること。',
+    ],
+
+    project_wip_title: "開発中のプロジェクト...", project_wip_subtitle: "詳細は順次公開します。",
+    project_wip_desc: "現段階はプレアルファ。続報をお待ちください。",
+    project_wip_tags: ['近日公開'],
+
+    btn_back_to_projects: "← プロジェクト一覧へ", btn_view_details: "詳細を見る", btn_steam_page: "Steam", btn_playmarket_page: "Play Market", status_soon: "近日公開",
+
+    blog_title: "開発ブログ", btn_read_more: "続きを読む →", btn_back_to_blog: "← ブログへ",
+
+    post1_title: "なぜJSからGodot 4へ移ったのか", post1_date: "2025年10月06日",
+    post1_summary: "Canvas/JSとGodotでの2D開発を比較し、エンジンがもたらす利点を語ります。",
+    post1_content: `<p>初めてのゲーム制作は喜びと学びの連続です。最初は純粋なJavaScriptで作りましたが、ゲームループや衝突判定の管理が大変でした。</p>
+      <h3>JSでの学び：</h3>
+      <ul>
+        <li><strong>ロジックの集中</strong>：すべてを一つにまとめると可読性が落ちます。</li>
+        <li><strong>FPSの罠</strong>：requestAnimationFrameではなくsetIntervalを使う失敗。</li>
+      </ul>
+      <p>しかし **Godot 4** によって多くの煩雑さが解消され、ゲームデザインに集中できるようになりました。</p>`,
+
+    post2_title: "ウェブアニメーションのための5つのライブラリ", post2_date: "2025年09月28日",
+    post2_summary: "軽量なCSSから強力なJSまで、ポートフォリオを生き生きとさせるツールの紹介です。",
+    post2_content: `<p>アニメーションはウェブの表情です。私が使う5つのツール：</p>
+      <ol>
+        <li><strong>Tailwind CSS Transitions</strong> — 素早いUIアニメーション。</li>
+        <li><strong>GSAP (GreenSock)</strong> — 複雑な表現向け。</li>
+        <li><strong>Lottie</strong> — After Effectsの取り込み。</li>
+        <li><strong>Three.js</strong> — 3D表現が必要なときに。</li>
+        <li><strong>Framer Motion</strong> — Reactでのトランジションに便利。</li>
+      </ol>`,
+
+    post3_title: "ゲームデザインの考察：2Dで生き残る方法", post3_date: "2025年09月15日",
+    post3_summary: "ビジュアルかメカニクスか？ 真に大切なものについて。",
+    post3_content: `<p>インディー開発では取捨選択が重要です。美しい見た目だけでは足りません。</p>
+      <h3>ゲームプレイが王様</h3>
+      <p>深いメカニクスがあれば、シンプルなグラフィックも魅力になります。まずは遊びのコア、次に磨き上げる――これが私の流儀です。</p>`,
+
+    contact_title: "EW Studio へお問い合わせ", contact_subtitle: "新しい案件や会話を歓迎します。メッセージをどうぞ。",
+    form_name: "お名前", form_email: "メールアドレス", form_message: "メッセージ", form_submit: "送信",
+
+    footer_text: `&copy; ${new Date().getFullYear()} EW Studio. Axel Void が <span class="text-red-500">♥</span> を込めて制作`
+  },
+
+  // -------------------------------------------------------------------------
+  // КОРЕЙСКИЙ (KO)
+  // -------------------------------------------------------------------------
+  ko: {
+    page_title: "개발자 포트폴리오 — EW Studio",
+    nav_about: "스튜디오 소개", nav_projects: "프로젝트", nav_blog: "블로그", nav_contact: "연락",
+    hero_subtitle: "인디 2D 게임 개발 · 웹 연습",
+    hero_title: "안녕하세요, Axel Void입니다",
+    hero_description: "매력적인 2D 게임을 만들기 위해 **Godot 4**를 익히고 있는 인디 개발자입니다. 포트폴리오를 위해 웹(React / Three.js)도 공부 중입니다.",
+    hero_button: "프로젝트 보기",
+
+    about_title: "EW Studio 소개", about_subtitle: "저는 누구이고 무엇을 만드는가",
+    about_p1: "EW Studio(Eclipse Work Studio)는 제 개인 프로젝트입니다. 저는 단독 개발자로서 **Godot 4**를 중심으로 2D 세계를 제작합니다. 3D는 나중에 — 지금은 픽셀과 메커닉에 집중합니다.",
+    about_p2: "동시에 웹 개발(JavaScript, React)을 배우며 작업물을 보기 좋게 배치하는 법을 익히고 있습니다. 이 사이트는 그 과정의 일부입니다. (밤샘 디버그는 제 일상의 일부입니다.)",
+
+    projects_title: "내 프로젝트들",
+    project_atlas_title: "Project Atlas: Destination",
+    project_atlas_subtitle: "프리알파 단계의 Godot 기반 2D 픽셀 게임",
+    project_atlas_desc: "코스믹 테크노-호러 분위기의 **Reverse Bullet Hell / Action Survival**. 현재 활발히 개발 중입니다.",
+    project_atlas_tags: ['Godot 4', '2D', 'Pixel Art', 'Pre-Alpha', '개발 중'],
+
+    project_atlas_lore_title: "세계관",
+    project_atlas_lore: `Project Atlas는 최강자를 고르지 않는다. 추출되어야 할 'Skill'을 가진 자를 선택한다. 당신은 감정이 배제된 시뮬레이션 'Code Zero Space'에 배치되었다. 멘토 'Terminal'의 요구는 단 하나: 120분 동안 생존하라. 나머지는 실험이다.`,
+
+    project_atlas_challenges_title: "도전 과제 및 해결",
+    project_atlas_challenges: [
+      '스타일: Godot 4에서 다크하고 하이 콘트라스트한 비주얼을 구현하되 가독성을 유지.',
+      '최적화: 2D에서 수백의 적을 처리하면서 FPS를 지키기.',
+      '스토리텔링: 게임 내 텍스트와 환경으로 깊은 세계관을 자연스럽게 전달하기.',
+    ],
+
+    project_wip_title: "개발 중...", project_wip_subtitle: "곧 흥미로운 소식이 올라옵니다.",
+    project_wip_desc: "프로젝트는 초기 단계입니다. 더 많은 정보는 추후 공개됩니다.",
+    project_wip_tags: ['곧 공개'],
+
+    btn_back_to_projects: "← 프로젝트로", btn_view_details: "자세히 보기", btn_steam_page: "Steam", btn_playmarket_page: "Play Market", status_soon: "곧 공개",
+
+    blog_title: "개발 블로그", btn_read_more: "더 읽기 →", btn_back_to_blog: "← 블로그로",
+
+    post1_title: "왜 JS에서 Godot 4로 옮겼나", post1_date: "2025년 10월 06일",
+    post1_summary: "순수 Canvas/JS와 Godot 엔진에서의 2D 개발 비교 — 엔진의 장점은 무엇인가?",
+    post1_content: `<p>첫 게임 제작은 설렘과 시행착오의 연속입니다. 저는 처음에 순수 JavaScript로 시작했고, 게임 루프와 충돌 처리가 큰 부담이었습니다.</p>
+      <h3>JS에서 배운 점:</h3>
+      <ul>
+        <li><strong>코드 뭉치기</strong>: 모든 것을 한 파일에 넣으면 관리가 어려워집니다.</li>
+        <li><strong>FPS 문제</strong>: setInterval 대신 requestAnimationFrame을 써야 합니다.</li>
+      </ul>
+      <p>**Godot 4** 덕분에 많은 반복 작업이 줄어들어 디자인에 더 집중할 수 있게 되었습니다.</p>`,
+
+    post2_title: "웹 애니메이션을 위한 5가지 라이브러리", post2_date: "2025년 09월 28일",
+    post2_summary: "가벼운 CSS부터 강력한 JS까지 — 포트폴리오에 생기를 불어넣는 도구들.",
+    post2_content: `<p>애니메이션은 현대 웹의 표정입니다. 제가 쓰는 5가지 툴:</p>
+      <ol>
+        <li><strong>Tailwind CSS Transitions</strong> — 빠른 UI 애니메이션.</li>
+        <li><strong>GSAP (GreenSock)</strong> — 복잡한 애니메이션의 표준.</li>
+        <li><strong>Lottie</strong> — After Effects 애니메이션 불러오기.</li>
+        <li><strong>Three.js</strong> — 3D가 필요할 때.</li>
+        <li><strong>Framer Motion</strong> — React 전환 효과에 편리.</li>
+      </ol>`,
+
+    post3_title: "게임디자인 생각: 2D에서 살아남기", post3_date: "2025년 09월 15일",
+    post3_summary: "그래픽 vs 게임성 — 어떤 것이 더 중요한가?",
+    post3_content: `<p>인디 게임 개발에서는 선택이 중요합니다. 멋진 그래픽보다 재미있는 플레이가 우선입니다.</p>
+      <h3>게임플레이가 왕이다</h3>
+      <p>좋은 메커닉이 있다면 단순한 비주얼도 플레이어에게 받아들여집니다. 저는 항상 먼저 핵심을 만들고 나중에 다듬습니다.</p>`,
+
+    contact_title: "EW Studio에 연락하기", contact_subtitle: "새 프로젝트나 대화 환영합니다. 메시지를 보내주세요!",
+    form_name: "이름", form_email: "이메일", form_message: "메시지", form_submit: "보내기",
+
+    footer_text: `&copy; ${new Date().getFullYear()} EW Studio. Axel Void가 <span class="text-red-500">♥</span> 를 담아 개발했습니다`
+  },
+
+  // -------------------------------------------------------------------------
+  // КИТАЙСКИЙ (ZH-CN) - 简体中文
+  // -------------------------------------------------------------------------
+  zh: {
+    page_title: "开发者作品集 — EW Studio",
+    nav_about: "关于工作室", nav_projects: "项目", nav_blog: "博客", nav_contact: "联系我们",
+    hero_subtitle: "独立 2D 游戏开发 · Web 练习",
+    hero_title: "大家好，我是 Axel Void",
+    hero_description: "独立开发者，正在精通 **Godot 4**，制作有吸引力的 2D 游戏，同时学习（React / Three.js）完善作品集。",
+    hero_button: "查看项目",
+
+    about_title: "关于 EW Studio", about_subtitle: "我是谁，我在做什么",
+    about_p1: "EW Studio（Eclipse Work Studio）是我的个人项目。我是独立开发者，专注用 **Godot 4** 打磨 2D 世界与玩法。3D 很酷，但当前我更喜欢把注意力放在像素与机制上。",
+    about_p2: "同时我在学习 Web（JavaScript, React），希望以更专业的方式展示我的作品。这个网站就是其中一部分。——是的，我也会深夜修 Bug。",
+
+    projects_title: "我的项目",
+    project_atlas_title: "Project Atlas: Destination",
+    project_atlas_subtitle: "基于 Godot 的 2D 像素游戏 — 预 Alpha",
+    project_atlas_desc: "一款带有宇宙科技恐怖气氛的 **Reverse Bullet Hell / Action Survival**，项目正在开发中。",
+    project_atlas_tags: ['Godot 4', '2D', 'Pixel Art', 'Pre-Alpha', '开发中'],
+
+    project_atlas_lore_title: "背景故事",
+    project_atlas_lore: `Project Atlas 并不选择最强者，而是选择那些其“Skill（技能）”可被提取的人。你被放入代号「Code Zero」的中立模拟空间，一个冷漠且精密的试验场。你的导师 Terminal 唯一的命令是：存活 120 分钟。其余的，交给探索。`,
+
+    project_atlas_challenges_title: "挑战与解决方案",
+    project_atlas_challenges: [
+      '视觉：在 Godot 4 中实现暗系、高对比的美术同时保证可读性。',
+      '优化：在 2D 画面中处理数百个敌人且不掉帧。',
+      '叙事：通过内置文本与环境自然嵌入深层背景故事。',
+    ],
+
+    project_wip_title: "项目进行中...", project_wip_subtitle: "有趣的内容即将上线。",
+    project_wip_desc: "项目处于早期阶段，后续会逐步公布细节。",
+    project_wip_tags: ['即将推出'],
+
+    btn_back_to_projects: "← 返回项目", btn_view_details: "查看详情", btn_steam_page: "Steam 页面", btn_playmarket_page: "Play Market 页面", status_soon: "即将推出",
+
+    blog_title: "开发日志", btn_read_more: "继续阅读 →", btn_back_to_blog: "← 返回博客",
+
+    post1_title: "我为何从 JS 转向 Godot 4", post1_date: "2025-10-06",
+    post1_summary: "比较纯 Canvas/JS 与 Godot 引擎的 2D 开发，探讨引擎带来的便利。",
+    post1_content: `<p>做第一款游戏是既兴奋又反复试错的过程。最初我用纯 JavaScript 开发，游戏循环与碰撞处理消耗大量精力。</p>
+      <h3>在 JS 中学到的教训：</h3>
+      <ul>
+        <li><strong>逻辑堆积</strong>：尝试把所有逻辑塞进同一个文件会出问题。</li>
+        <li><strong>FPS 问题</strong>：使用 <strong>setInterval</strong> 而非 <strong>requestAnimationFrame</strong> 是常见错误。</li>
+      </ul>
+      <p>现在借助 **Godot 4**，很多基础问题由引擎处理，我能更多地专注于玩法与关卡设计。</p>`,
+
+    post2_title: "5 个 Web 动画库", post2_date: "2025-09-28",
+    post2_summary: "从轻量 CSS 到强力 JS，这些工具帮我为作品集注入活力。",
+    post2_content: `<p>动画是现代网页的灵魂。我常用的五个工具：</p>
+      <ol>
+        <li><strong>Tailwind CSS Transitions</strong> — 适合快速 UI 动效。</li>
+        <li><strong>GSAP (GreenSock)</strong> — 复杂动画的行业标准。</li>
+        <li><strong>Lottie</strong> — 导入 After Effects 动画。</li>
+        <li><strong>Three.js</strong> — 需要 3D 时使用。</li>
+        <li><strong>Framer Motion</strong> — 在 React 中快速做过渡。</li>
+      </ol>`,
+
+    post3_title: "游戏设计思考：如何在 2D 中生存", post3_date: "2025-09-15",
+    post3_summary: "画面还是玩法？关于让游戏真正出彩的思考。",
+    post3_content: `<p>独立开发需要取舍。华丽的画面无法掩盖玩法的空洞。</p>
+      <h3>玩法为王</h3>
+      <p>如果机制足够吸引人，玩家会原谅简朴的画面。我的原则是先验证玩法，再去打磨表现。</p>`,
+
+    contact_title: "联系 EW Studio", contact_subtitle: "欢迎新项目与交流，请留言！",
+    form_name: "你的名字", form_email: "你的邮箱", form_message: "消息", form_submit: "发送",
+
+    footer_text: `&copy; ${new Date().getFullYear()} EW Studio. 由 Axel Void 倾注 <span class="text-red-500">♥</span> 设计与开发`
+  },
+
+  // -------------------------------------------------------------------------
+  // НЕМЕЦКИЙ (DE)
+  // -------------------------------------------------------------------------
+  de: {
+    page_title: "Entwickler-Portfolio — EW Studio",
+    nav_about: "Über", nav_projects: "Projekte", nav_blog: "Blog", nav_contact: "Kontakt",
+    hero_subtitle: "Indie 2D-Spielentwicklung · Web-Praxis",
+    hero_title: "Hallo, ich bin Axel Void",
+    hero_description: "Ich bin Indie-Entwickler und lerne **Godot 4**, um fesselnde 2D-Spiele zu bauen. Parallel dazu vertiefe ich Web-Techniken (React / Three.js) für mein Portfolio.",
+    hero_button: "Projekte ansehen",
+
+    about_title: "Über EW Studio", about_subtitle: "Wer ich bin und was ich erschaffe",
+    about_p1: "EW Studio (Eclipse Work Studio) ist mein persönliches Projekt. Als Ein-Mann-Team konzentriere ich mich auf **Godot 4** und die Schaffung atmosphärischer 2D-Welten. 3D ist interessant, aber derzeit nicht mein Fokus.",
+    about_p2: "Gleichzeitig lerne ich Web-Technologien (JavaScript, React), um meine Arbeiten bestmöglich zu präsentieren. Diese Seite ist Teil dieser Reise. (Kaffee und Bugs gehören dazu.)",
+
+    projects_title: "Meine Projekte",
+    project_atlas_title: "Project Atlas: Destination",
+    project_atlas_subtitle: "2D-Pixel-Art-Spiel mit Godot — Pre-Alpha",
+    project_atlas_desc: "Ein **Reverse Bullet Hell / Action Survival** mit Cosmic Techno-Horror-Stimmung. Projekt in aktiver Entwicklung.",
+    project_atlas_tags: ['Godot 4', '2D', 'Pixel Art', 'Pre-Alpha', 'In Entwicklung'],
+
+    project_atlas_lore_title: "Lore",
+    project_atlas_lore: `Project Atlas wählt keine "Helden" im klassischen Sinn — es selektiert jene, deren Fähigkeit (Skill) extrahiert werden kann. Du wurdest in den "Code Zero Space" transferiert, eine neutrale, emotionsarme Simulation. Dein Mentor, Terminal, gibt eine einzige Regel: Überlebe 120 Minuten. Der Rest ist Versuchsanordnung und Geheimnis.`,
+
+    project_atlas_challenges_title: "Herausforderungen & Lösungen",
+    project_atlas_challenges: [
+      'Stil: einen dunklen, kontrastreichen Look in Godot 4 umsetzen und gleichzeitig die Spielbarkeit bewahren.',
+      'Optimierung: Hunderte Gegner in 2D darstellen, ohne FPS-Einbrüche.',
+      'Lore: Tiefenstory über In-Game-Texte und Umgebung vermitteln, ohne Spielrhythmus zu stören.',
+    ],
+
+    project_wip_title: "Projekt in Arbeit...", project_wip_subtitle: "Bald mehr Infos.",
+    project_wip_desc: "Das Projekt befindet sich in einer frühen Phase — Updates folgen.",
+    project_wip_tags: ['Kommt bald'],
+
+    btn_back_to_projects: "← Zu den Projekten", btn_view_details: "Details", btn_steam_page: "Steam", btn_playmarket_page: "Play Market", status_soon: "Bald verfügbar",
+
+    blog_title: "Entwickler-Blog", btn_read_more: "Weiterlesen →", btn_back_to_blog: "← Zum Blog",
+
+    post1_title: "Warum ich von JS zu Godot 4 gewechselt bin", post1_date: "06. Oktober 2025",
+    post1_summary: "Vergleich: 2D-Entwicklung in reinem Canvas/JS vs. mit Godot — welche Arbeit erleichtert der Engine?",
+    post1_content: `<p>Das erste Spiel zu erstellen ist voller Euphorie und Lernmomente. Mein erstes Projekt war in reinem JavaScript; Game-Loop und Kollisionsmanagement waren zeitaufwendig.</p>
+      <h3>Fehler, aus denen ich in JS gelernt habe:</h3>
+      <ul>
+        <li><strong>Monolithische Logik</strong>: Alles in eine Datei quetschen führt schnell ins Chaos.</li>
+        <li><strong>FPS-Fallen</strong>: setInterval statt requestAnimationFrame verwenden.</li>
+      </ul>
+      <p>In **Godot 4** werden viele Grundprobleme vom Engine-Stack übernommen — dadurch bleibt mehr Raum für Gameplay-Design.</p>`,
+
+    post2_title: "5 Bibliotheken für Web-Animationen", post2_date: "28. September 2025",
+    post2_summary: "Von leichten CSS-Tricks bis zu mächtigen JS-Frameworks — Tools, die mein Portfolio lebendig machen.",
+    post2_content: `<p>Animation ist das Herz moderner UIs. Fünf Werkzeuge, die ich nutze:</p>
+      <ol>
+        <li><strong>Tailwind CSS Transitions</strong> — schnelle UI-Politur.</li>
+        <li><strong>GSAP (GreenSock)</strong> — Profi-Standard für komplexe Abläufe.</li>
+        <li><strong>Lottie</strong> — Import von After Effects.</li>
+        <li><strong>Three.js</strong> — wenn 3D nötig ist.</li>
+        <li><strong>Framer Motion</strong> — elegante Transitions in React.</li>
+      </ol>`,
+
+    post3_title: "Gedanken zum Game Design: Wie man in 2D überlebt", post3_date: "15. September 2025",
+    post3_summary: "Grafik oder Gameplay? Warum Mechanik oft wichtiger ist.",
+    post3_content: `<p>In der Indie-Szene sind Entscheidungen gefragt. Gute Grafik ersetzt kein gutes Spiel.</p>
+      <h3>Gameplay ist König</h3>
+      <p>Tiefe Mechanik lässt Spieler einfache Optik verzeihen. Mein Prinzip: zuerst Gameplay, dann Feinschliff.</p>`,
+
+    contact_title: "EW Studio kontaktieren", contact_subtitle: "Wir sind offen für Projekte und Austausch — schreib mir!",
+    form_name: "Ihr Name", form_email: "Ihre E-Mail", form_message: "Nachricht", form_submit: "Senden",
+
+    footer_text: `&copy; ${new Date().getFullYear()} EW Studio. Von Axel Void mit <span class="text-red-500">♥</span> entwickelt`
+  }
 };
+
+
