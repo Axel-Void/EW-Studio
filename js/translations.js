@@ -7,7 +7,7 @@ export const translations = {
     page_title: "Портфолио разработчика — EW Studio",
     nav_about: "О студии", nav_projects: "Проекты", nav_blog: "Блог", nav_contact: "Контакты",
     hero_subtitle: "Инди-разработка 2D-игр · веб-практика",
-    hero_title: "Привет — я Axel Void",
+    hero_title: "Привет — я Einir",
     hero_description: "Я — инди-разработчик: осваиваю **Godot 4**, делаю захватывающие 2D-игры и параллельно прокачиваю веб-навыки (React / Three.js) для портфолио.",
     hero_button: "Смотреть проекты",
 
@@ -70,7 +70,7 @@ export const translations = {
     contact_subtitle: "Открыт для разговоров и совместных проектов — напишите мне!",
     form_name: "Ваше имя", form_email: "Email", form_message: "Сообщение", form_submit: "Отправить",
 
-    footer_text: `&copy; ${new Date().getFullYear()} EW Studio. Разработано Axel Void с <span class="text-red-500">♥</span>`
+    footer_text: `&copy; ${new Date().getFullYear()} EW Studio. Разработано Einir с <span class="text-red-500">♥</span>`
   },
 
   // -------------------------------------------------------------------------
@@ -80,7 +80,7 @@ export const translations = {
     page_title: "Эшләнмәче портфолиосы — EW Studio",
     nav_about: "Студия турында", nav_projects: "Проектлар", nav_blog: "Блог", nav_contact: "Элемтә",
     hero_subtitle: "Инди 2D-уйын эшләве һәм веб-практика",
-    hero_title: "Сәлам — мин Axel Void",
+    hero_title: "Сәлам — мин Einir",
     hero_description: "Мин — инди-эшләнмәче: **Godot 4** өйрәнәм, мавыктыргыч 2D уйларын ясыйм һәм портфолио өчен веб-эшләнмәләр (React / Three.js) өйрәнәм.",
     hero_button: "Проектларны карау",
 
@@ -142,7 +142,7 @@ export const translations = {
     contact_title: "EW Studio белән элемтә", contact_subtitle: "Яңа проектлар һәм сөйләшүләргә һәрвакыт ачыл! Хәбәр языгыз.",
     form_name: "Исемең", form_email: "Email", form_message: "Хәбәр", form_submit: "Җибәрү",
 
-    footer_text: `&copy; ${new Date().getFullYear()} EW Studio. Axel Void тарафыннан <span class="text-red-500">♥</span> белән эшләнде`
+    footer_text: `&copy; ${new Date().getFullYear()} EW Studio. Einir тарафыннан <span class="text-red-500">♥</span> белән эшләнде`
   },
 
   // -------------------------------------------------------------------------
@@ -152,7 +152,7 @@ export const translations = {
     page_title: "Developer Portfolio — EW Studio",
     nav_about: "About", nav_projects: "Projects", nav_blog: "Blog", nav_contact: "Contact",
     hero_subtitle: "Indie 2D Game Dev · Web Practice",
-    hero_title: "Hi — I'm Axel Void",
+    hero_title: "Hi — I'm Einir",
     hero_description: "Indie developer mastering **Godot 4** to craft compelling 2D games, while sharpening web skills (React / Three.js) to present my work.",
     hero_button: "View Projects",
 
@@ -215,7 +215,7 @@ export const translations = {
     contact_subtitle: "Open to projects and conversations — send a message!",
     form_name: "Your name", form_email: "Your email", form_message: "Message", form_submit: "Send",
 
-    footer_text: `&copy; ${new Date().getFullYear()} EW Studio. Developed by Axel Void with <span class="text-red-500">♥</span>`
+    footer_text: `&copy; ${new Date().getFullYear()} EW Studio. Developed by Einir with <span class="text-red-500">♥</span>`
   },
 
   // -------------------------------------------------------------------------
@@ -225,7 +225,7 @@ export const translations = {
     page_title: "開発者ポートフォリオ — EW Studio",
     nav_about: "スタジオについて", nav_projects: "プロジェクト", nav_blog: "ブログ", nav_contact: "お問い合わせ",
     hero_subtitle: "インディー2Dゲーム開発・ウェブ実践",
-    hero_title: "こんにちは、Axel Void です",
+    hero_title: "こんにちは、Einir です",
     hero_description: "2Dの魅力的なゲームを作るために **Godot 4** を習得中のインディー開発者です。ポートフォリオ用にウェブ開発（React / Three.js）も学んでいます。",
     hero_button: "プロジェクトを見る",
 
@@ -287,7 +287,7 @@ export const translations = {
     contact_title: "EW Studio へお問い合わせ", contact_subtitle: "新しい案件や会話を歓迎します。メッセージをどうぞ。",
     form_name: "お名前", form_email: "メールアドレス", form_message: "メッセージ", form_submit: "送信",
 
-    footer_text: `&copy; ${new Date().getFullYear()} EW Studio. Axel Void が <span class="text-red-500">♥</span> を込めて制作`
+    footer_text: `&copy; ${new Date().getFullYear()} EW Studio. Einir が <span class="text-red-500">♥</span> を込めて制作`
   },
 
   // -------------------------------------------------------------------------
@@ -297,7 +297,7 @@ export const translations = {
     page_title: "개발자 포트폴리오 — EW Studio",
     nav_about: "스튜디오 소개", nav_projects: "프로젝트", nav_blog: "블로그", nav_contact: "연락",
     hero_subtitle: "인디 2D 게임 개발 · 웹 연습",
-    hero_title: "안녕하세요, Axel Void입니다",
+    hero_title: "안녕하세요, Einir입니다",
     hero_description: "매력적인 2D 게임을 만들기 위해 **Godot 4**를 익히고 있는 인디 개발자입니다. 포트폴리오를 위해 웹(React / Three.js)도 공부 중입니다.",
     hero_button: "프로젝트 보기",
 
@@ -359,7 +359,7 @@ export const translations = {
     contact_title: "EW Studio에 연락하기", contact_subtitle: "새 프로젝트나 대화 환영합니다. 메시지를 보내주세요!",
     form_name: "이름", form_email: "이메일", form_message: "메시지", form_submit: "보내기",
 
-    footer_text: `&copy; ${new Date().getFullYear()} EW Studio. Axel Void가 <span class="text-red-500">♥</span> 를 담아 개발했습니다`
+    footer_text: `&copy; ${new Date().getFullYear()} EW Studio. Einir가 <span class="text-red-500">♥</span> 를 담아 개발했습니다`
   },
 
   // -------------------------------------------------------------------------
@@ -369,7 +369,7 @@ export const translations = {
     page_title: "开发者作品集 — EW Studio",
     nav_about: "关于工作室", nav_projects: "项目", nav_blog: "博客", nav_contact: "联系我们",
     hero_subtitle: "独立 2D 游戏开发 · Web 练习",
-    hero_title: "大家好，我是 Axel Void",
+    hero_title: "大家好，我是 Einir",
     hero_description: "独立开发者，正在精通 **Godot 4**，制作有吸引力的 2D 游戏，同时学习（React / Three.js）完善作品集。",
     hero_button: "查看项目",
 
@@ -431,7 +431,7 @@ export const translations = {
     contact_title: "联系 EW Studio", contact_subtitle: "欢迎新项目与交流，请留言！",
     form_name: "你的名字", form_email: "你的邮箱", form_message: "消息", form_submit: "发送",
 
-    footer_text: `&copy; ${new Date().getFullYear()} EW Studio. 由 Axel Void 倾注 <span class="text-red-500">♥</span> 设计与开发`
+    footer_text: `&copy; ${new Date().getFullYear()} EW Studio. 由 Einir 倾注 <span class="text-red-500">♥</span> 设计与开发`
   },
 
   // -------------------------------------------------------------------------
@@ -441,7 +441,7 @@ export const translations = {
     page_title: "Entwickler-Portfolio — EW Studio",
     nav_about: "Über", nav_projects: "Projekte", nav_blog: "Blog", nav_contact: "Kontakt",
     hero_subtitle: "Indie 2D-Spielentwicklung · Web-Praxis",
-    hero_title: "Hallo, ich bin Axel Void",
+    hero_title: "Hallo, ich bin Einir",
     hero_description: "Ich bin Indie-Entwickler und lerne **Godot 4**, um fesselnde 2D-Spiele zu bauen. Parallel dazu vertiefe ich Web-Techniken (React / Three.js) für mein Portfolio.",
     hero_button: "Projekte ansehen",
 
@@ -503,8 +503,9 @@ export const translations = {
     contact_title: "EW Studio kontaktieren", contact_subtitle: "Wir sind offen für Projekte und Austausch — schreib mir!",
     form_name: "Ihr Name", form_email: "Ihre E-Mail", form_message: "Nachricht", form_submit: "Senden",
 
-    footer_text: `&copy; ${new Date().getFullYear()} EW Studio. Von Axel Void mit <span class="text-red-500">♥</span> entwickelt`
+    footer_text: `&copy; ${new Date().getFullYear()} EW Studio. Von Einir mit <span class="text-red-500">♥</span> entwickelt`
   }
 };
+
 
 
