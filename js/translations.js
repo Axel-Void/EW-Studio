@@ -7,7 +7,7 @@ export const translations = {
     page_title: "Портфолио разработчика — EW Studio",
     nav_about: "О студии", nav_projects: "Проекты", nav_blog: "Блог", nav_contact: "Контакты",
     hero_subtitle: "Инди-разработка 2D-игр · веб-практика",
-    hero_title: "Привет — я Einir",
+    hero_title: "Привет — я Einir или просто Салих",
     hero_description: "Я — инди-разработчик: осваиваю **Godot 4**, делаю захватывающие 2D-игры и параллельно прокачиваю веб-навыки (React / Three.js) для портфолио.",
     hero_button: "Смотреть проекты",
 
@@ -506,6 +506,7 @@ export const translations = {
     footer_text: `&copy; ${new Date().getFullYear()} EW Studio. Von Einir mit <span class="text-red-500">♥</span> entwickelt`
   }
 };
+
 
 
 
