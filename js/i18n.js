@@ -3,9 +3,9 @@ import { translations } from './translations.js';
 import { handleRouting } from './router.js';
 
 export const availableLanguages = {
-    ru: { name: 'Русский', flag: 'ru' },
-    en: { name: 'English', flag: 'en' },
-    jp: { name: '日本語', flag: 'jp' },
+    ru: { name: 'Русский', flag: 'ru:' },
+    en: { name: 'English', flag: 'en:' },
+    jp: { name: '日本語', flag: 'jp:' },
 };
 
 const langDropdown = () => document.getElementById('lang-dropdown');
@@ -32,7 +32,6 @@ export function setLanguage(lang) {
     if (flagNode) flagNode.textContent = availableLanguages[lang].flag;
     if (textNode) textNode.textContent = lang.toUpperCase();
 
-    // После смены языка обновляем роутинг/рендер
     handleRouting();
 }
 
@@ -54,5 +53,6 @@ export function initLanguageSwitcher() {
     const init = savedLang || (translations[browserLang] ? browserLang : 'en');
     setLanguage(init);
 }
+
 
 
