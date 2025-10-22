@@ -31,8 +31,7 @@ export function handleRouting() {
     let hash = window.location.hash.slice(1) || 'about';
     const parts = hash.split('/');
     const mainRoute = parts[0];
-
-    // Always (re)render lists so content matches language
+    
     renderProjectList();
     renderBlogList();
 
@@ -48,3 +47,4 @@ export function handleRouting() {
     else if (typeof action === 'string') showPage(action);
     else showPage('about');
 }
+
