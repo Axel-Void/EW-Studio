@@ -5,17 +5,13 @@ import { renderProjectList, renderBlogList } from './render.js';
 import { initCanvas } from './canvas.js';
 
 document.addEventListener('DOMContentLoaded', () => {
-    // language
     initLanguageSwitcher();
 
-    // routing & render initial
     handleRouting();
     window.addEventListener('hashchange', handleRouting);
 
-    // init canvas animation
     initCanvas();
 
-    // observe fade-in sections
     const observer = new IntersectionObserver((entries, obs) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -30,7 +26,6 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelectorAll('.fade-in-section:not(.is-visible)').forEach(s => observer.observe(s));
     });
 
-    // mobile menu toggle
     const mobileMenu = document.getElementById('mobile-menu');
     const menuToggle = document.getElementById('mobile-menu-toggle');
     const menuIconOpen = document.getElementById('menu-icon-open');
@@ -47,14 +42,13 @@ document.addEventListener('DOMContentLoaded', () => {
     if (menuToggle) menuToggle.addEventListener('click', toggleMobileMenu);
     menuItems.forEach(item => item.addEventListener('click', toggleMobileMenu));
 
-    // simple form submit handler (demo)
     const contactForm = document.querySelector('form');
     if (contactForm) {
         contactForm.addEventListener('submit', (e) => {
             e.preventDefault();
-            // лёгкий UX - просто сброс формы и сообщение в консоль
             alert('Форма отправлена (демо).');
             contactForm.reset();
         });
     }
 });
+
